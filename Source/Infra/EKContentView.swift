@@ -481,7 +481,9 @@ class EKContentView: UIView {
         entryDelegate.didFinishDisplaying(entry: contentView, keepWindowActive: keepWindow, dismissCompletionHandler: dismissHandler)
         
         // Lastly, perform the Dismiss Completion Handler as the entry is no longer displayed
-        didDisappear?()
+        DispatchQueue.main.async {
+            didDisappear?()
+        }
     }
     
     deinit {
