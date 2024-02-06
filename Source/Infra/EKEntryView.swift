@@ -11,7 +11,7 @@ import UIKit
 class EKEntryView: EKStyleView {
     
     struct Content {
-        var provider: EKProvider!
+        weak var provider: EKProvider!
         var viewController: UIViewController!
         var view: UIView!
         var attributes: EKAttributes

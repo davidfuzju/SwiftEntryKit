@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol EKProvider {
+protocol EKProvider: AnyObject {
     var safeAreaInsets: UIEdgeInsets { get }
 }
