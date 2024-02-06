@@ -122,6 +122,9 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		632EF8EF2B71F5AC008769CD /* EKViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8ED2B71F5AC008769CD /* EKViewControllerProvider.swift */; };
+		632EF8F02B71F5AC008769CD /* EKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8EE2B71F5AC008769CD /* EKViewController.swift */; };
+		632EF8F52B71FFB5008769CD /* EKProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8F42B71FFB5008769CD /* EKProvider.swift */; };
 		C207011E12B68340B41AED68 /* Pods_SwiftEntryKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7287A554A48DB0976C7AA96F /* Pods_SwiftEntryKitTests.framework */; };
 		ED3C4B61645C539D4E1B2C91 /* Pods_SwiftEntryKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B9C8169640826800BA255C /* Pods_SwiftEntryKitDemo.framework */; };
 /* End PBXBuildFile section */
@@ -286,6 +289,9 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftEntryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftEntryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632EF8ED2B71F5AC008769CD /* EKViewControllerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKViewControllerProvider.swift; sourceTree = "<group>"; };
+		632EF8EE2B71F5AC008769CD /* EKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKViewController.swift; sourceTree = "<group>"; };
+		632EF8F42B71FFB5008769CD /* EKProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKProvider.swift; sourceTree = "<group>"; };
 		7287A554A48DB0976C7AA96F /* Pods_SwiftEntryKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEntryKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFB554B7EC0872395B9099A /* Pods-SwiftEntryKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftEntryKitDemo/Pods-SwiftEntryKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EFEC60E1244126F18ABBB375 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -399,6 +405,9 @@
 		14B48B1820B81C9700CE3EF4 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				632EF8F42B71FFB5008769CD /* EKProvider.swift */,
+				632EF8EE2B71F5AC008769CD /* EKViewController.swift */,
+				632EF8ED2B71F5AC008769CD /* EKViewControllerProvider.swift */,
 				14F3FD85213A6ED900CA3010 /* EntryCachingHeuristic.swift */,
 				14B48B1B20B81C9700CE3EF4 /* EKWindowProvider.swift */,
 				14B48B1C20B81C9700CE3EF4 /* EKWindow.swift */,
@@ -769,14 +778,17 @@
 				TargetAttributes = {
 					143C6A1D20B54E4A00F7DD89 = {
 						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = 6NM8G5CU6A;
 						ProvisioningStyle = Automatic;
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6NM8G5CU6A;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6NM8G5CU6A;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
@@ -934,6 +946,7 @@
 				14B48B7A20B81C9700CE3EF4 /* EKPopUpMessage.swift in Sources */,
 				14B48B6920B81C9700CE3EF4 /* EKAttributes+Shadow.swift in Sources */,
 				14B48B8220B81C9700CE3EF4 /* EKAccessoryNoteMessageView.swift in Sources */,
+				632EF8EF2B71F5AC008769CD /* EKViewControllerProvider.swift in Sources */,
 				14B48B8720B81C9700CE3EF4 /* EKPopUpMessageView.swift in Sources */,
 				14B48B5A20B81C9700CE3EF4 /* EKWindowProvider.swift in Sources */,
 				14B48B7920B81C9700CE3EF4 /* EKAttributes+FrameStyle.swift in Sources */,
@@ -959,6 +972,7 @@
 				14B48B7220B81C9700CE3EF4 /* EKAttributes+PositionConstraints.swift in Sources */,
 				145F56BB20B863220027EB67 /* UIApplication+EKAppearance.swift in Sources */,
 				14B48B7720B81C9700CE3EF4 /* EKAttributes+BackgroundStyle.swift in Sources */,
+				632EF8F52B71FFB5008769CD /* EKProvider.swift in Sources */,
 				14B48B6E20B81C9700CE3EF4 /* EKAttributes+Duration.swift in Sources */,
 				1461DEFD21E0A9FC0034E08C /* EntryAppearanceDescriptor.swift in Sources */,
 				14B48B6420B81C9700CE3EF4 /* UIRectCorner+Short.swift in Sources */,
@@ -988,6 +1002,7 @@
 				14B48B8320B81C9700CE3EF4 /* EKProcessingNoteMessageView.swift in Sources */,
 				14B48B8020B81C9700CE3EF4 /* EKNoteMessageView.swift in Sources */,
 				14B48B7320B81C9700CE3EF4 /* EKAttributes+Precedence.swift in Sources */,
+				632EF8F02B71F5AC008769CD /* EKViewController.swift in Sources */,
 				143C1577271C814E009A7D03 /* QLCompatibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1090,12 +1105,12 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1103,7 +1118,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SwiftEntryKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.SwiftEntryKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1129,11 +1144,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1141,7 +1156,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SwiftEntryKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.SwiftEntryKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1264,14 +1279,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit\"",
 				);
 				INFOPLIST_FILE = SwiftEntryKit/DemoAppInfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.SwiftEntryKitDemo;
@@ -1289,14 +1304,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit\"",
 				);
 				INFOPLIST_FILE = SwiftEntryKit/DemoAppInfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.SwiftEntryKitDemo;
@@ -1314,7 +1329,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1325,6 +1340,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1340,13 +1356,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6NM8G5CU6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit\"",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

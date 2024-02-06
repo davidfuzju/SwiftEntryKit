@@ -11,17 +11,20 @@ import UIKit
 class EKEntryView: EKStyleView {
     
     struct Content {
+        var provider: EKProvider!
         var viewController: UIViewController!
         var view: UIView!
         var attributes: EKAttributes
         
-        init(viewController: UIViewController, attributes: EKAttributes) {
+        init(provider: EKProvider, viewController: UIViewController, attributes: EKAttributes) {
+            self.provider = provider
             self.viewController = viewController
             self.view = viewController.view
             self.attributes = attributes
         }
         
-        init(view: UIView, attributes: EKAttributes) {
+        init(provider: EKProvider, view: UIView, attributes: EKAttributes) {
+            self.provider = provider
             self.view = view
             self.attributes = attributes
         }
@@ -161,9 +164,9 @@ class EKEntryView: EKStyleView {
             var bottomInset: CGFloat = 0
             switch attributes.position {
             case .top:
-                topInset = -EKWindowProvider.safeAreaInsets.top
+                topInset = -content.provider.safeAreaInsets.top
             case .bottom, .center:
-                bottomInset = EKWindowProvider.safeAreaInsets.bottom
+                bottomInset = content.provider.safeAreaInsets.bottom
             }
             
             backgroundView.layoutToSuperview(.top, offset: topInset)

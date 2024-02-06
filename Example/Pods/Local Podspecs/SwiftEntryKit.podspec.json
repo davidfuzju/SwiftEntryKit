@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "summary": "A simple banner and pop-up displayer for iOS. Written in Swift.",
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
   "swift_versions": "5.0",
   "requires_arc": true,

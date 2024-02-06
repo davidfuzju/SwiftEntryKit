@@ -10,8 +10,8 @@ import Foundation
 
 struct CachedEntry {
     let view: EKEntryView
-    let presentInsideKeyWindow: Bool
-    let rollbackWindow: SwiftEntryKit.RollbackWindow
+    let presentInsideKeyWindow: Bool?
+    let rollbackWindow: SwiftEntryKit.RollbackWindow?
 }
 
 protocol EntryCachingHeuristic: AnyObject {

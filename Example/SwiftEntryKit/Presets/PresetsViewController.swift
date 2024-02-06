@@ -163,7 +163,7 @@ class PresetsViewController: UIViewController {
             style: style
         )
         let contentView = EKNoteMessageView(with: labelContent)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showImageNote(attributes: EKAttributes) {
@@ -186,7 +186,7 @@ class PresetsViewController: UIViewController {
             with: labelContent,
             imageContent: imageContent
         )
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showAnimatingImageNote(attributes: EKAttributes) {
@@ -221,7 +221,7 @@ class PresetsViewController: UIViewController {
             with: labelContent,
             imageContent: imageContent
         )
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showProcessingNote(attributes: EKAttributes) {
@@ -240,7 +240,7 @@ class PresetsViewController: UIViewController {
             with: labelContent,
             activityIndicator: .white
         )
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Bumps a status bar replacement entry
@@ -277,7 +277,7 @@ class PresetsViewController: UIViewController {
             noteView.set(.height, of: statusBarHeight)
             contentView = noteView
         }
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Show rating view
@@ -355,7 +355,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: EKColor.standardBackground.with(alpha: 0.2),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss {
+                self.dismissForTest {
                     // Here you may perform a completion handler
                 }
         }
@@ -375,7 +375,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: pinkyColor.with(alpha: 0.05),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let buttonsBarContent = EKProperty.ButtonBarContent(
             with: closeButton, okButton,
@@ -392,7 +392,7 @@ class PresetsViewController: UIViewController {
                 // Rating selected - do something
         }
         let contentView = EKRatingMessageView(with: message)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Bumps a notification structured entry
@@ -436,7 +436,7 @@ class PresetsViewController: UIViewController {
         )
         let notificationMessage = EKNotificationMessage(simpleMessage: simpleMessage)
         let contentView = EKNotificationMessageView(with: notificationMessage)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Bumps a chat message structured entry
@@ -479,7 +479,7 @@ class PresetsViewController: UIViewController {
             auxiliary: time
         )
         let contentView = EKNotificationMessageView(with: notificationMessage)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showDarkAwesomePopupMessage(attributes: EKAttributes) {
@@ -576,10 +576,10 @@ class PresetsViewController: UIViewController {
             title: title,
             description: description,
             button: button) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let contentView = EKPopUpMessageView(with: message)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showButtonBarMessage(attributes: EKAttributes) {
@@ -628,7 +628,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: Color.Gray.a800.with(alpha: 0.05),
             accessibilityIdentifier: "close-button") {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let okButtonLabelStyle = EKProperty.LabelStyle(
             font: buttonFont,
@@ -677,7 +677,7 @@ class PresetsViewController: UIViewController {
             buttonBarContent: buttonsBarContent
         )
         let contentView = EKAlertMessageView(with: alertMessage)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     private func showAlertView(attributes: EKAttributes) {
@@ -731,7 +731,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: Color.Gray.a800.with(alpha: 0.05),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let laterButtonLabelStyle = EKProperty.LabelStyle(
             font: buttonFont,
@@ -747,7 +747,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: Color.Teal.a600.with(alpha: 0.05),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let okButtonLabelStyle = EKProperty.LabelStyle(
             font: buttonFont,
@@ -763,7 +763,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: .clear,
             highlightedBackgroundColor: Color.Teal.a600.with(alpha: 0.05),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         // Generate the content
         let buttonsBarContent = EKProperty.ButtonBarContent(
@@ -777,25 +777,25 @@ class PresetsViewController: UIViewController {
             buttonBarContent: buttonsBarContent
         )
         let contentView = EKAlertMessageView(with: alertMessage)
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Bumps a navigation controller
     private func showNavigationController(with attributes: EKAttributes) {
         let viewController = ContactsViewController()
         let navigationController = ExampleNavigationViewController(rootViewController: viewController)
-        SwiftEntryKit.display(entry: navigationController, using: attributes)
+        displayForTest(entry: navigationController, using: attributes)
     }
     
     // Bumps a custom nib originated view
     private func showCustomNibView(attributes: EKAttributes) {
-        SwiftEntryKit.display(entry: NibExampleView(), using: attributes)
+        displayForTest(entry: NibExampleView(), using: attributes)
     }
     
     // Bumps a custom view controller that is using a view from nib
     private func showCustomViewController(attributes: EKAttributes) {
         let viewController = ExampleViewController(with: NibExampleView())
-        SwiftEntryKit.display(entry: viewController, using: attributes)
+        displayForTest(entry: viewController, using: attributes)
     }
     
     // Sign in form
@@ -820,14 +820,14 @@ class PresetsViewController: UIViewController {
             highlightedBackgroundColor: style.buttonBackground.with(alpha: 0.8),
             displayMode: displayMode,
             accessibilityIdentifier: "continueButton") {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let contentView = EKFormMessageView(
             with: title,
             textFieldsContent: textFields,
             buttonContent: button
         )
-        SwiftEntryKit.display(entry: contentView, using: attributes)
+        displayForTest(entry: contentView, using: attributes)
     }
     
     // Sign up form
@@ -850,7 +850,7 @@ class PresetsViewController: UIViewController {
             backgroundColor: style.buttonBackground,
             highlightedBackgroundColor: style.buttonBackground.with(alpha: 0.8),
             displayMode: displayMode) {
-                SwiftEntryKit.dismiss()
+                self.dismissForTest()
         }
         let contentView = EKFormMessageView(
             with: title,
@@ -860,8 +860,25 @@ class PresetsViewController: UIViewController {
         attributes.lifecycleEvents.didAppear = {
             contentView.becomeFirstResponder(with: 0)
         }
-        SwiftEntryKit.display(entry: contentView, using: attributes, presentInsideKeyWindow: true)
+        displayForTest(entry: contentView, using: attributes, presentInsideKeyWindow: true)
     }
+    
+}
+
+extension PresetsViewController {
+    
+    func displayForTest(entry: UIView, using: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: SwiftEntryKit.RollbackWindow = .main) {
+        self.display(entry: entry, using: using)
+    }
+    
+    func displayForTest(entry: UIViewController, using: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: SwiftEntryKit.RollbackWindow = .main) {
+        self.display(entry: entry, using: using)
+    }
+    
+    func dismissForTest(_ descriptor: SwiftEntryKit.EntryDismissalDescriptor = .displayed, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
+        self.dismiss(descriptor, with: completion)
+    }
+
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
