@@ -12,20 +12,14 @@ extension UIApplication {
     static var WindowProviderKey = UnsafeRawPointer(bitPattern: "windowProvider".hashValue)!
     
     var windowProvider: EKWindowProvider {
-        if let a = objc_getAssociatedObject(self, UIApplication.WindowProviderKey) as? EKWindowProvider {
-            return a
-        }
-        
-        let ret = EKWindowProvider.shared
-        objc_setAssociatedObject(self, UIApplication.WindowProviderKey, ret, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        return ret
+        return EKWindowProvider.shared
     }
     
     public var entryWindow: UIWindow? {
         return windowProvider.entryWindow
     }
     
-    public func isCurrentlyDisplaying(sender: UIViewController) -> Bool {
+    public func isCurrentlyDisplaying() -> Bool {
         return SwiftEntryKit.isCurrentlyDisplaying()
     }
     
@@ -46,7 +40,7 @@ extension UIApplication {
     }
     
     public func queueContains(entryNamed name: String? = nil) -> Bool {
-        SwiftEntryKit.queueContains(entryNamed: name)
+        return SwiftEntryKit.queueContains(entryNamed: name)
     }
     
 }
@@ -55,33 +49,38 @@ extension UIViewController {
     
     static var ViewControllerProviderKey = UnsafeRawPointer(bitPattern: "viewControllerProvider".hashValue)!
     
-    var viewControllerProvider: EKViewControllerProvider {
-        if let a = objc_getAssociatedObject(self, UIViewController.ViewControllerProviderKey) as? EKViewControllerProvider {
-            return a
+    var viewControllerProvider: EKViewControllerProvider? {
+        get {
+            return objc_getAssociatedObject(self, UIViewController.ViewControllerProviderKey) as? EKViewControllerProvider
         }
-        
-        let ret = EKViewControllerProvider(with: self)
-        objc_setAssociatedObject(self, UIViewController.ViewControllerProviderKey, ret, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        return ret
+        set {
+            objc_setAssociatedObject(self, UIViewController.ViewControllerProviderKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
     }
     
     public var entryViewController: UIViewController? {
-        return viewControllerProvider.entryViewController
+        return viewControllerProvider?.entryViewController
     }
     
-    public func isCurrentlyDisplaying(sender: UIViewController) -> Bool {
-        return SwiftEntryKit.isCurrentlyDisplaying(sender: sender)
+    public func isCurrentlyDisplaying() -> Bool {
+        return SwiftEntryKit.isCurrentlyDisplaying(sender: self)
     }
     
-    public func isCurrentlyDisplaying(entryNamed name: String? = nil, sender: UIViewController) -> Bool {
-        return SwiftEntryKit.isCurrentlyDisplaying(entryNamed: name, sender: sender)
+    public func isCurrentlyDisplaying(entryNamed name: String? = nil) -> Bool {
+        return SwiftEntryKit.isCurrentlyDisplaying(entryNamed: name, sender: self)
     }
     
     public func display(entry view: UIView, using attributes: EKAttributes) {
+        if viewControllerProvider == nil {
+            viewControllerProvider = EKViewControllerProvider(with: self)
+        }
         SwiftEntryKit.display(entry: view, sender: self, using: attributes)
     }
     
     public func display(entry viewController: UIViewController, using attributes: EKAttributes) {
+        if viewControllerProvider == nil {
+            viewControllerProvider = EKViewControllerProvider(with: self)
+        }
         SwiftEntryKit.display(entry: viewController, sender: self, using: attributes)
     }
     
@@ -90,7 +89,7 @@ extension UIViewController {
     }
     
     public func queueContains(entryNamed name: String? = nil) -> Bool {
-        SwiftEntryKit.queueContains(entryNamed: name, sender: self)
+        return SwiftEntryKit.queueContains(entryNamed: name, sender: self)
     }
 
 }
@@ -147,7 +146,7 @@ extension SwiftEntryKit {
      - parameter name: The name of the entry. Its default value is *nil*.
      */
     public class func isCurrentlyDisplaying(entryNamed name: String? = nil, sender: UIViewController) -> Bool {
-        return sender.viewControllerProvider.isCurrentlyDisplaying(entryNamed: name)
+        return sender.viewControllerProvider?.isCurrentlyDisplaying(entryNamed: name) ?? false
     }
     
     /**
@@ -156,7 +155,7 @@ extension SwiftEntryKit {
      - Convenience computed variable. Using it is the same as invoking **~queueContains() -> Bool** (witohut the name of the entry)
      */
     public class func isQueueEmpty(sender: UIViewController) -> Bool {
-        return !sender.viewControllerProvider.queueContains()
+        return !(sender.viewControllerProvider?.queueContains() ?? false)
     }
     
     /**
@@ -166,7 +165,7 @@ extension SwiftEntryKit {
      - parameter name: The name of the entry. Its default value is *nil*.
      */
     public class func queueContains(entryNamed name: String? = nil, sender: UIViewController) -> Bool {
-        return sender.viewControllerProvider.queueContains(entryNamed: name)
+        return sender.viewControllerProvider?.queueContains(entryNamed: name) ?? false
     }
     
     /**
@@ -180,7 +179,7 @@ extension SwiftEntryKit {
      */
     public class func display(entry view: UIView, sender: UIViewController, using attributes: EKAttributes) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider.display(view: view, using: attributes)
+            sender.viewControllerProvider?.display(view: view, using: attributes)
         }
     }
     
@@ -195,7 +194,7 @@ extension SwiftEntryKit {
      */
     public class func display(entry viewController: UIViewController, sender: UIViewController, using attributes: EKAttributes) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider.display(viewController: viewController, using: attributes)
+            sender.viewControllerProvider?.display(viewController: viewController, using: attributes)
         }
     }
     
@@ -208,7 +207,7 @@ extension SwiftEntryKit {
      */
     public class func dismiss(_ descriptor: EntryDismissalDescriptor = .displayed, sender: UIViewController, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider.dismiss(descriptor, with: completion)
+            sender.viewControllerProvider?.dismiss(descriptor, with: completion)
         }
     }
     
@@ -220,10 +219,10 @@ extension SwiftEntryKit {
      */
     public class func layoutIfNeeded(sender: UIViewController) {
         if Thread.isMainThread {
-            sender.viewControllerProvider.layoutIfNeeded()
+            sender.viewControllerProvider?.layoutIfNeeded()
         } else {
             DispatchQueue.main.async {
-                sender.viewControllerProvider.layoutIfNeeded()
+                sender.viewControllerProvider?.layoutIfNeeded()
             }
         }
     }

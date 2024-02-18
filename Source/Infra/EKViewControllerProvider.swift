@@ -17,12 +17,12 @@ final class EKViewControllerProvider: EntryPresenterDelegate, EKProvider {
     
     weak var sender: UIViewController?
     
-    /** Current entry window */
-    var entryViewController: EKViewController!
+    /** Current entry view controller */
+    var entryViewController: EKViewController?
     
     /** Returns the root view controller if it is instantiated */
     var rootVC: EKRootViewController? {
-        return entryViewController.children.filter { $0 is EKRootViewController }.first as? EKRootViewController
+        return entryViewController?.children.filter { $0 is EKRootViewController }.first as? EKRootViewController
     }
 
     /** Entry queueing heuristic  */
@@ -37,10 +37,10 @@ final class EKViewControllerProvider: EntryPresenterDelegate, EKProvider {
     
     var isResponsiveToTouches: Bool {
         set {
-            entryViewController.isAbleToReceiveTouches = newValue
+            entryViewController?.isAbleToReceiveTouches = newValue
         }
         get {
-            return entryViewController.isAbleToReceiveTouches
+            return entryViewController?.isAbleToReceiveTouches ?? false
         }
     }
     
@@ -53,7 +53,7 @@ final class EKViewControllerProvider: EntryPresenterDelegate, EKProvider {
             return nil
         }
         
-        if let sender = sender {
+        if let sender = sender, let entryViewController = entryViewController  {
             sender.addChild(entryViewController)
             sender.view.addSubview(entryViewController.view)
             entryViewController.didMove(toParent: sender)
@@ -136,7 +136,7 @@ final class EKViewControllerProvider: EntryPresenterDelegate, EKProvider {
     
     /** Clear all entries immediately and display to the rollback window */
     func displayRollbackWindow() {
-        if let _ = entryViewController.parent {
+        if let entryViewController = entryViewController, let _ = entryViewController.parent {
             entryViewController.willMove(toParent: nil)
             entryViewController.removeFromParent()
             entryViewController.view.removeFromSuperview()
