@@ -63,33 +63,33 @@ extension UIViewController {
     }
     
     public func isCurrentlyDisplaying() -> Bool {
-        return SwiftEntryKit.isCurrentlyDisplaying(sender: self)
+        return SwiftEntryKit.isCurrentlyDisplaying(self)
     }
     
     public func isCurrentlyDisplaying(entryNamed name: String? = nil) -> Bool {
-        return SwiftEntryKit.isCurrentlyDisplaying(entryNamed: name, sender: self)
+        return SwiftEntryKit.isCurrentlyDisplaying(self, entryNamed: name)
     }
     
     public func display(entry view: UIView, using attributes: EKAttributes) {
         if viewControllerProvider == nil {
             viewControllerProvider = EKViewControllerProvider(with: self)
         }
-        SwiftEntryKit.display(entry: view, sender: self, using: attributes)
+        SwiftEntryKit.display(self, entry: view, using: attributes)
     }
     
     public func display(entry viewController: UIViewController, using attributes: EKAttributes) {
         if viewControllerProvider == nil {
             viewControllerProvider = EKViewControllerProvider(with: self)
         }
-        SwiftEntryKit.display(entry: viewController, sender: self, using: attributes)
+        SwiftEntryKit.display(self, entry: viewController, using: attributes)
     }
     
     public func dismiss(_ descriptor: SwiftEntryKit.EntryDismissalDescriptor = .displayed, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
-        SwiftEntryKit.dismiss(descriptor, sender: self, with: completion)
+        SwiftEntryKit.dismiss(self, descriptor: descriptor, with: completion)
     }
     
     public func queueContains(entryNamed name: String? = nil) -> Bool {
-        return SwiftEntryKit.queueContains(entryNamed: name, sender: self)
+        return SwiftEntryKit.queueContains(self, entryNamed: name)
     }
 
 }
@@ -133,9 +133,10 @@ extension SwiftEntryKit {
      Returns true if **any** entry is currently displayed.
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
      - Convenience computed variable. Using it is the same as invoking **isCurrentlyDisplaying() -> Bool** (witohut the name of the entry).
+     - parameter presenting: A presenting view controller for entry to be display
      */
-    public class func isCurrentlyDisplaying(sender: UIViewController) -> Bool {
-        return isCurrentlyDisplaying(entryNamed: nil, sender: sender)
+    public class func isCurrentlyDisplaying(_ presenting: UIViewController) -> Bool {
+        return isCurrentlyDisplaying(presenting, entryNamed: nil)
     }
     
     /**
@@ -143,43 +144,45 @@ extension SwiftEntryKit {
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
      - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently displayed.
      - Returns a *false* value for currently enqueued entries.
+     - parameter presenting: A presenting view controller for entry to be display
      - parameter name: The name of the entry. Its default value is *nil*.
      */
-    public class func isCurrentlyDisplaying(entryNamed name: String? = nil, sender: UIViewController) -> Bool {
-        return sender.viewControllerProvider?.isCurrentlyDisplaying(entryNamed: name) ?? false
+    public class func isCurrentlyDisplaying(_ presenting: UIViewController, entryNamed name: String? = nil) -> Bool {
+        return presenting.viewControllerProvider?.isCurrentlyDisplaying(entryNamed: name) ?? false
     }
     
     /**
      Returns true if **any** entry is currently enqueued and waiting to be displayed.
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
      - Convenience computed variable. Using it is the same as invoking **~queueContains() -> Bool** (witohut the name of the entry)
+     - parameter presenting: A presenting view controller for entry to be display
      */
-    public class func isQueueEmpty(sender: UIViewController) -> Bool {
-        return !(sender.viewControllerProvider?.queueContains() ?? false)
+    public class func isQueueEmpty(_ presenting: UIViewController) -> Bool {
+        return !(presenting.viewControllerProvider?.queueContains() ?? false)
     }
     
     /**
      Returns true if an entry with a given name is currently enqueued and waiting to be displayed.
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
      - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently displayed, meaning, the queue is not currently empty.
+     - parameter presenting: A presenting view controller for entry to be display
      - parameter name: The name of the entry. Its default value is *nil*.
      */
-    public class func queueContains(entryNamed name: String? = nil, sender: UIViewController) -> Bool {
-        return sender.viewControllerProvider?.queueContains(entryNamed: name) ?? false
+    public class func queueContains(_ presenting: UIViewController, entryNamed name: String? = nil) -> Bool {
+        return presenting.viewControllerProvider?.queueContains(entryNamed: name) ?? false
     }
     
     /**
      Displays a given entry view using an attributes struct.
      - A thread-safe method - Can be invokes from any thread
      - A class method - Should be called on the class
+     - parameter presenting: A presenting view controller for entry to be display
      - parameter view: Custom view that is to be displayed
      - parameter attributes: Display properties
-     - parameter presentInsideKeyWindow: Indicates whether the entry window should become the key window.
-     - parameter rollbackWindow: After the entry has been dismissed, SwiftEntryKit rolls back to the given window. By default it is *.main* which is the app main window
      */
-    public class func display(entry view: UIView, sender: UIViewController, using attributes: EKAttributes) {
+    public class func display(_ presenting: UIViewController, entry view: UIView, using attributes: EKAttributes) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider?.display(view: view, using: attributes)
+            presenting.viewControllerProvider?.display(view: view, using: attributes)
         }
     }
     
@@ -187,14 +190,13 @@ extension SwiftEntryKit {
      Displays a given entry view controller using an attributes struct.
      - A thread-safe method - Can be invokes from any thread
      - A class method - Should be called on the class
+     - parameter presenting: A presenting view controller for entry to be display
      - parameter view: Custom view that is to be displayed
      - parameter attributes: Display properties
-     - parameter presentInsideKeyWindow: Indicates whether the entry window should become the key window.
-     - parameter rollbackWindow: After the entry has been dismissed, SwiftEntryKit rolls back to the given window. By default it is *.main* - which is the app main window
      */
-    public class func display(entry viewController: UIViewController, sender: UIViewController, using attributes: EKAttributes) {
+    public class func display(_ presenting: UIViewController, entry viewController: UIViewController, using attributes: EKAttributes) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider?.display(viewController: viewController, using: attributes)
+            presenting.viewControllerProvider?.display(viewController: viewController, using: attributes)
         }
     }
     
@@ -202,12 +204,13 @@ extension SwiftEntryKit {
      Dismisses the currently presented entry and removes the presented window instance after the exit animation is concluded.
      - A thread-safe method - Can be invoked from any thread.
      - A class method - Should be called on the class.
+     - parameter presenting: A presenting view controller for entry to be display
      - parameter descriptor: A descriptor for the entries that are to be dismissed. The default value is *.displayed*.
      - parameter completion: A completion handler that is to be called right after the entry is dismissed (After the animation is concluded).
      */
-    public class func dismiss(_ descriptor: EntryDismissalDescriptor = .displayed, sender: UIViewController, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
+    public class func dismiss(_ presenting: UIViewController, descriptor: EntryDismissalDescriptor = .displayed, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
         DispatchQueue.main.async {
-            sender.viewControllerProvider?.dismiss(descriptor, with: completion)
+            presenting.viewControllerProvider?.dismiss(descriptor, with: completion)
         }
     }
     
@@ -217,12 +220,12 @@ extension SwiftEntryKit {
      - A thread-safe method - Can be invoked from any thread.
      - A class method - Should be called on the class.
      */
-    public class func layoutIfNeeded(sender: UIViewController) {
+    public class func layoutIfNeeded(_ presenting: UIViewController) {
         if Thread.isMainThread {
-            sender.viewControllerProvider?.layoutIfNeeded()
+            presenting.viewControllerProvider?.layoutIfNeeded()
         } else {
             DispatchQueue.main.async {
-                sender.viewControllerProvider?.layoutIfNeeded()
+                presenting.viewControllerProvider?.layoutIfNeeded()
             }
         }
     }
