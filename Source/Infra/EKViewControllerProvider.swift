@@ -69,7 +69,7 @@ final class EKViewControllerProvider: EntryPresenterDelegate, EKProvider {
         let entryVC: EKRootViewController
         if entryViewController == nil {
             entryVC = EKRootViewController(with: self)
-            entryViewController = EKViewController(with: entryVC)
+            entryViewController = EKViewController(with: entryVC, provider: self)
         } else {
             entryVC = rootVC!
         }
