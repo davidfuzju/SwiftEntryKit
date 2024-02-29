@@ -7,98 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011547E2D144F7EFFB0EFF20358337FA /* EKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1755B99ED2F5BA83F6D66BD06F4907 /* EKColor.swift */; };
-		01EAE2EC1263BE74D53DD561CDA8FCFC /* UIView+Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EA1964B8FA1F5F9A9B5A2FE929DFD /* UIView+Responder.swift */; };
-		0340D642F370BF4CD6E2381546DEAD74 /* EKAttributes+PopBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FE63035DD8E2C960736F2269774BF /* EKAttributes+PopBehavior.swift */; };
-		0472B3486DDB3D7125240102EAF289E0 /* EKImageNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9355E13A142011B1C5284B59CEC8DB /* EKImageNoteMessageView.swift */; };
-		04F4AC530F3148906C7A565EF62D5821 /* EKAttributes+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F7F160C730F0324337CCF8E00E83B /* EKAttributes+Animation.swift */; };
+		039EB04CBFF460693E8BFAEAA1B2FFD2 /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87152AC902D7DEE07CB658D47C4B90F /* UIEdgeInsets+Utils.swift */; };
 		068E825D6FE9520EBE3FA985C5AE4DA0 /* Pods-SwiftEntryKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0598CC5B54F64EFF897D87A397E403E /* Pods-SwiftEntryKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F282003645744C4D672B0E276B26A6F /* EKAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2DFA4486B9D03243198134964CAA6 /* EKAttributes.swift */; };
-		0F3BBC6BBFDE3443595258FB4B778247 /* EKRatingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC40A945D53EA9DF20F106D22AC156 /* EKRatingSymbolView.swift */; };
-		108BBEC8223CD1271D602C4572ACCFDE /* UIRectCorner+Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBF679AD36380BBE4B55F3E08997D6 /* UIRectCorner+Short.swift */; };
-		10AB2A7B849EB7E588E351123EFF9304 /* EKAttributes+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD1503AF763970DF91F8DFC0BB675B /* EKAttributes+Shadow.swift */; };
-		1115AB395B4DE045EC01FF84C62165F4 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE2A53ECC5A6716E7FF410B5770AA6C /* UIView+QLContentWrap.swift */; };
-		11324EBDE6250F9164A1D5313F4CC649 /* EKAttributes+HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2064E5733B60CD17D85EC4B801B9B1A /* EKAttributes+HapticFeedback.swift */; };
-		144C8E04734F0E93F5E026AE00BB4491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		0CC93C78BD0A553B9A3C134A88C49B3B /* UIApplication+EKAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E71556CCC973830E52F3661A68D266B /* UIApplication+EKAppearance.swift */; };
+		101A31F37463BDFD2085A88B334FBBC5 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96D04740BB89E82F17333ADEB496B6 /* UIView+Shadow.swift */; };
 		14DE35A5C2A9CDA68974BB63E54E980E /* Pods-SwiftEntryKitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78239DB78DD3345BC32A5B876DEA9726 /* Pods-SwiftEntryKitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B94109379269DEB47E4232256345B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		1D81A114D6A9A9ECAC21181289CC60AD /* EKProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC535C52BE499E7D75A0D82F812B3DE /* EKProvider.swift */; };
-		22D3CA2D81CDAEFF2E7E331D38BBE6A7 /* EKRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5A103CB10E47B1F389AE2CED73D07 /* EKRootViewController.swift */; };
-		24B928FFCAA304F8C5704E1ED15DF322 /* EKProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B396E09DA80676F4B180A2EF376B59F5 /* EKProperty.swift */; };
-		27FC98E4C7EFBD35B2335C516B8E43B7 /* QLCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651FDA494972D3E2C08E7EFB66D2E77 /* QLCompatibility.swift */; };
-		28F74B02E222AE6DDD75C8528C549CC5 /* EKSimpleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46844FBAC6DB28B17B038D1BBCA15FFD /* EKSimpleMessage.swift */; };
-		2F65E1694D27031BB676165F3BCA36E8 /* EKEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312920EE5C2E709F50825FD29188581B /* EKEntryView.swift */; };
-		34D98F1DC0F833D48AD25A4B4CA4AC6F /* UIApplication+EKAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8064970D4C712D42EFB8CAFCFC6D88 /* UIApplication+EKAppearance.swift */; };
-		41FF75E1E8619951EB777478B523B469 /* EKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88E858F02AAA83DAE97D58B4758A22E /* EKViewController.swift */; };
-		45A437D459C9290ADBC1587134A406FE /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AECC7540E8CF1831E1888B8C1A458F /* UIView+QuickLayout.swift */; };
-		4CF12415AB2ADBF3BFB457831917A403 /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338F34CD1E5B10155D9E49C63B71DDEF /* UIViewArray+QuickLayout.swift */; };
-		50C31234673094CCCE1C6EECAD74C2F2 /* EKPopUpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA25C916281C26DAC041C3D2AB8914 /* EKPopUpMessage.swift */; };
-		51E7940BBA7307CECF057959364498CE /* EKPopUpMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5B31F994B69A7B06FA949163982C9 /* EKPopUpMessageView.swift */; };
-		5384F82309554C3685C15659E7C4BD50 /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297371B84321B48F3A589A48FC4B102 /* UIEdgeInsets+Utils.swift */; };
-		53BD8FD6E8FD67C1AA5E01E67EFF253B /* EKAlertMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4CCEF34CFEFDF8F70F9F7B1593AD4 /* EKAlertMessageView.swift */; };
-		5B3CF950163729C34A76F23A3B5CC49F /* EKAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC7317A00E5A9DCC7B1C134467BE7A /* EKAlertMessage.swift */; };
-		5B915C40C0FCE64A8A56B2420106577C /* EKAttributes+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249182DC419BCEC8F6C4DFBC7D860E9 /* EKAttributes+StatusBar.swift */; };
+		1594295C05067CE6DFBDF4BEDE7135CC /* UIView+Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9A3462D4382A03DB76722E17FC1CD /* UIView+Responder.swift */; };
+		181FEBAE4101E89D135251422E76D64E /* EKSimpleMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72A4CD60BF9B38CFBF4CE634E591ED /* EKSimpleMessageView.swift */; };
+		1A021E0BB80D534AC8DE27DF0A2BDA80 /* EKNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED9986D8B821C983B0D30BA5101D6F /* EKNoteMessageView.swift */; };
+		1AC197AE2E2E24D16A214E3FC48102D8 /* EKAttributes+FrameStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923C055257C0A0000788DF463D022E2 /* EKAttributes+FrameStyle.swift */; };
+		1E80583A4AEBAA99D5EE477CF764A3A9 /* EKMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC9D46F77A8ECFA0F6C1DD509E686 /* EKMessageContentView.swift */; };
+		239BC6A67738D36E528536FC5058E621 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A418448CDF6B0F9205209F624A968 /* UIView+Utils.swift */; };
+		24DD9E4387976DADF718D60974354736 /* EKAttributes+BackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3F9BDF3227FEC70264E4C4CB9111A /* EKAttributes+BackgroundStyle.swift */; };
+		2551829FDD76F7917D1A01FB7BC5D02C /* EKContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4FDC1B07F207CBE32C4C31144092C /* EKContentView.swift */; };
+		25C1A52964109CB769C5DCFF4B43487D /* EKAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05EB85B43CA59D81FA85C5685296034 /* EKAlertMessage.swift */; };
+		27205954A90FE60DC3C6EAE2A0508F78 /* EKAttributes+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D791273F105D532D3EA73D807DE0F /* EKAttributes+Validations.swift */; };
+		27AF4226B53282362FD02D921094895E /* EKPopUpMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017B07599C60CAB7EC4B17D1BCCB1CD /* EKPopUpMessageView.swift */; };
+		2AA6DA744AD4888CCEBEF1CBEA658386 /* EKRatingMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB71A53AF15258C40FDC64F4C0B94B6 /* EKRatingMessageView.swift */; };
+		2D7EEBE49E3376A64E92464C5512D61D /* EKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07B3B4E6169172193CBE64C89FA55FB /* EKColor.swift */; };
+		2E6D7CB26A947E0C6CC7C92ED2BB6E92 /* EKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A5C0301B4FEEE3DEDB0CE81B06EFA /* EKViewController.swift */; };
+		2F8456D344B082780143EE33DB5A033F /* EKAttributes+HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70411B2D271AE7520EC78EEE5135ACA /* EKAttributes+HapticFeedback.swift */; };
+		316434F396F7FFE7DF804A1F5AF46534 /* EKProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72620AC7BEDE2EA5150020030719780E /* EKProperty.swift */; };
+		33F22026925172D5C0A0494FF64942AB /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BDDBDCA9F863EAF1B4E4EE4D112D10 /* SwiftEntryKit.swift */; };
+		35FDDDBB68154DC580333E48E5D0AB39 /* SwiftEntryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED1C4479771D72C0F7877779A8A57CC /* SwiftEntryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366EF91ED6DA44EF707C900B418BADAE /* EKAttributes+LifecycleActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF9BC82D790C08096AED0C3B05BA42 /* EKAttributes+LifecycleActions.swift */; };
+		38A934D64BA13B6FCF840A39DC8A0172 /* EKAttributes+PopBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804EE6C3A34959B6CFB9B79F3062B8E1 /* EKAttributes+PopBehavior.swift */; };
+		3DED449DCACD89E04AFE52D1B5A1E09F /* EKWindowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CA7E60923929289CFE3C4DCA5D05D /* EKWindowProvider.swift */; };
+		4CE1AF4A2DC6D1A09B1FCF0B6240F7EE /* EntryAppearanceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F9494A1E6D3D980048246F8B30C398 /* EntryAppearanceDescriptor.swift */; };
+		5965849ED3959B52689DDABB83597571 /* EKAttributes+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52453D72F29C6712446F2B7F4EE4AC84 /* EKAttributes+Scroll.swift */; };
+		5A7B4FAAE1CC2109B7EEB3471D220A0F /* EKAttributes+Precedence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E5668C058480BE40F09A0AF4AD4FD /* EKAttributes+Precedence.swift */; };
 		5C258564AFF20D612A3A339423F45584 /* Pods-SwiftEntryKitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F352296AFDF8DE73AE8F78DB5150C5A7 /* Pods-SwiftEntryKitTests-dummy.m */; };
-		5DA7020E7188C4C991A5ED4B21137D45 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF0179ED637AF1FB9C024BF1C0F3F6 /* UIView+Utils.swift */; };
-		5E3AD32EAF13E727A0DCD254F22D5EEF /* EKNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F2B86FB89B1DEB66770AC504DA8CC /* EKNoteMessageView.swift */; };
-		662894766BE25238B66FFF083C3E61CF /* SwiftEntryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C074E7164E0BE8AF7E350F447391E4DD /* SwiftEntryKit-dummy.m */; };
-		677D11ED14AFCE2626CAD208D2AFBF28 /* EKAttributes+PositionConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9E27494CF46F7F4E50605B136CBEE /* EKAttributes+PositionConstraints.swift */; };
-		6A46D73F9171006BCE87ECEAA6A0726F /* EKContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADC67C888031E3E45AEA5781402B6E /* EKContentView.swift */; };
-		6C0E0C3A6AAA060A821B4135C035B5BE /* EKViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9BF6708FF2111AADAB9F76CA29194 /* EKViewControllerProvider.swift */; };
-		6CF8F80AF5F0832D8EE717C1ED410633 /* EntryAppearanceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A68C471AB4C42D19B7E692E23021D /* EntryAppearanceDescriptor.swift */; };
-		6EB23ED2353DFFDBC7F2F18EF0CEEA57 /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1116E41EC706D87A14DE7539455B /* SwiftEntryKit.swift */; };
-		70136A7132336C8BE8B7C1A6EC6D8E88 /* EKAttributes+LifecycleActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4F2352231A5345948670AD5536870 /* EKAttributes+LifecycleActions.swift */; };
-		774B5457BA1380758C57EBBE7C4DDA99 /* EKAttributes+UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56198E067B6B04A7614215412A336A5 /* EKAttributes+UserInteraction.swift */; };
-		77FE5C7E7ECD409F9453827CC8C316D8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700E72AADF91E95102A662A7107D663 /* GradientView.swift */; };
-		7DE0D63248C7BB0F95B1D5FA89BB9064 /* EKAttributes+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074068C076FF1A622884B7FB47CF56E5 /* EKAttributes+Duration.swift */; };
-		7F174C1B4D7E551B0982F33BA18CC18F /* EKAttributes+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C3DD9982DCC628AB4B0A836F28D35 /* EKAttributes+Scroll.swift */; };
+		5F3F23FB890F47E4BBB1BBF641F7973A /* EKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E191F34B14175DCCBB05EBD51FD9E7 /* EKTextField.swift */; };
+		61A2CE93B3A550E0ED74D29F124CA583 /* EKProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79187BE87C651F0417DF894804896C33 /* EKProvider.swift */; };
+		6258B019B39D5F7F7D5620D241EB6C05 /* EKAttributes+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CEFB7B9E899BA067747D5B3AB7FAF /* EKAttributes+StatusBar.swift */; };
+		6526A653774228292A73F71C6C1C3877 /* EKAttributes+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BC6ABD2BE3CD35E87B451927FE270C /* EKAttributes+Animation.swift */; };
+		65AC68F670241772A9B82CCD0B32C11D /* EKViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4587FE9E4B3BA4579BD82403FFEEA /* EKViewControllerProvider.swift */; };
+		68609C8B054443F363F1FE1A4F3CD793 /* EKAlertMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68498913BA70B1489DB2E237646297A /* EKAlertMessageView.swift */; };
+		695C483F19BA8449D3BCF40DB0A27FE9 /* EKNotificationMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF13153FF45EAC4F2FB9EB0BAF3FC76 /* EKNotificationMessageView.swift */; };
+		6E71C320F0CDA6D0357DED426D3F5380 /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CF626841806B12A816CC81F42E107 /* UIViewArray+QuickLayout.swift */; };
+		6FD7F6C6F078974FDBA6F27F0DDCB5E1 /* UIRectCorner+Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0696F2A00C4C5C97DF9FC8404998147 /* UIRectCorner+Short.swift */; };
+		7DF7ED6D5A85F700879BFA88EFDDF8C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		7F8A2DB22DDD406DC3D30EA346CFDC78 /* EKEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4558A0CC02BDC1129FCF6C5EED2C27 /* EKEntryView.swift */; };
+		81C3CBCD8DC62113ED39CCEDCC43E332 /* EKWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E974A255CF57FA706B46F8B061B817 /* EKWrapperView.swift */; };
 		83D05E692A0CE612F52BC0B18745B370 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		84FC9524B7658911EC6C520906ED8A4B /* EKRatingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE03D8D001E2A9D91BB621528A6CB4 /* EKRatingMessage.swift */; };
-		8880DB405A592D7B4CEFB4BD4DC8622A /* EKAccessoryNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA1A7DC8DD22AB2858A96499BCE251 /* EKAccessoryNoteMessageView.swift */; };
-		88A686B79DAAA12309576725114BD18C /* EKButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B03B31819C4377854124C955D62BB2 /* EKButtonView.swift */; };
-		8A6226C3A07467566BA0927AA32AEBBF /* EKNotificationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCA9D0ECAC3803CA8FAD4FDE3E1A57 /* EKNotificationMessage.swift */; };
-		8BC28F57B167758CE19DBC220DE9A4E8 /* EKAttributes+DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E585F8A5884263E1390FCDDDE3D198FC /* EKAttributes+DisplayMode.swift */; };
-		8EF0F4E27C18C6C84958D8399D88E6A2 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EDFDDDCB44E2274758B44600F435B /* UIView+Shadow.swift */; };
-		8FC64CADB852B86C15BCD58C66015374 /* EKFormMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F411F735A1B7730A0727CC07B466D /* EKFormMessageView.swift */; };
-		9241A09485EC34D5EBD13539F30B0F5E /* EKRatingSymbolsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893D6362CB4A96181D1AEABCBC16F462 /* EKRatingSymbolsContainerView.swift */; };
-		933ED90F98EF4F5629C950318543FE9D /* EKAttributes+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107663EA66A8621C99D499E3C0EB6EF9 /* EKAttributes+Validations.swift */; };
-		939CCFD2169BFE7958D66004A06C6F4C /* EKMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D47C60167FDECAA163C7DE8478AB5 /* EKMessageContentView.swift */; };
-		A5419B87CBC4EE54686BC63651CDECB5 /* EKAttributes+BackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87AD26A6ECE45E0545783C8E9A3B0 /* EKAttributes+BackgroundStyle.swift */; };
-		B1077822453B66737D98302DE1A54EE4 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCDEFFDE3418400F50C7C650F9F129 /* UIColor+Utils.swift */; };
-		B26A0C55E788EAC73973D70B64B6495E /* EKAttributes+Precedence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F747C635A7B04D8C4DDE408AABB4CD9 /* EKAttributes+Precedence.swift */; };
-		B7B2355D57EDD19EE4DFADFB64300ACA /* EKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48390ECF66B6525B521B548C139F0ED3 /* EKWindow.swift */; };
-		BAA299A8C2AED09C7129BB94841D63A4 /* EKWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69157402515FC867E80C8594C9755EC6 /* EKWrapperView.swift */; };
-		BDE5D250DDA815100FF58DAD08D2B9FB /* EKStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053220DCD5893AA4EC84485A7C01A1F3 /* EKStyleView.swift */; };
+		88288003D8F6EAFD0B4CC9CF38110D79 /* EKAttributes+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FAE0ADC151664726AB1DA9A2851841 /* EKAttributes+Presets.swift */; };
+		89E3C78E6E2B8D03B7B62CAFDDF1DD51 /* EKAttributes+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649B8CA8D5595BEE2581263FEFCEF46 /* EKAttributes+Shadow.swift */; };
+		9134BABE0FABF1EDC5174FC9AA5668C4 /* EKStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E7B953A757B47A50C6BA52B2BBDE8 /* EKStyleView.swift */; };
+		92260FDF2EEA1455D608498571F8468F /* SwiftEntryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C671C54D0916EA5C6C9203F767533 /* SwiftEntryKit-dummy.m */; };
+		96E7FBC83F5B0F99D15D06BFFA872EF8 /* EKAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CCFFED57E5FD23381337B1768C5370 /* EKAttributes.swift */; };
+		99691F1768F29B318C174CDF7519A28B /* EKAttributes+DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F72B0BC57A8C579396D2E9B0B219 /* EKAttributes+DisplayMode.swift */; };
+		9A436876E23735698D82F9B925D69BF2 /* AssociatedWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3EDB68D23588C8A2CD5A415BC1DD4 /* AssociatedWeakObject.swift */; };
+		A1B7FFAE53F55FF940E0E073076D182A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A2AD475BB61E8714B5E82F8BF36033D9 /* EKSimpleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAFAE97FE00AF442FB587CA49CA095C /* EKSimpleMessage.swift */; };
+		A6E218A023C7B33130AB544744239E2E /* QLCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB54A0B5AF97280B28DBFDD2B3683C /* QLCompatibility.swift */; };
+		AF7F1AA2046A6AAD228C4D83E8E85869 /* EKRatingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B54F72B9B8D3A26358EBCA5E7BAC75 /* EKRatingSymbolView.swift */; };
+		B2ACFE20F4DAA50C90DF0D7B18943575 /* EKAccessoryNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936EE24194FCE1A008E02A5722180FBE /* EKAccessoryNoteMessageView.swift */; };
+		B2B075F0533413799D2FB20F3D6283D3 /* EKProcessingNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96713313BA9B99C006CC732430B67288 /* EKProcessingNoteMessageView.swift */; };
+		BAEDA0CD77CD7CE731743B1534BAC32E /* EKRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5BD8D8FBF322E22AC84F7B31814457 /* EKRootViewController.swift */; };
+		BB3D833EAAEBEEF3DDBE01E8A63C6740 /* EKAttributes+WindowLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629E26AC2D538497B3A7895CF5BEF /* EKAttributes+WindowLevel.swift */; };
+		BC6C4B3DF4288BB4D054D309E0514BA8 /* EKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B60293CDF22EC8A706B92B32B78656 /* EKWindow.swift */; };
+		BD825006DD5F95C96D1F09A4730A8C2D /* EKBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F09E0D043F560E78267CDB18678A5 /* EKBackgroundView.swift */; };
+		BDCBB3BA2417EF12DF1989E5D9476F1C /* EKButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F5622E58D2B35F6C0C5241FEAC1D5 /* EKButtonBarView.swift */; };
+		C1C1B9400D4ECCE8247ADFA896245E32 /* EKAttributes+UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC15E74165C2A87596A3A8A3260E8D /* EKAttributes+UserInteraction.swift */; };
+		C3E348295B59AFC06406428757FE5E23 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A464DC452BDB0575EFEBCD74B3304 /* GradientView.swift */; };
+		C428B046C8BB9B30D2B696EBD5864988 /* EKXStatusBarMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDA87AA8B52AC0F47E97C21FDF2BDB /* EKXStatusBarMessageView.swift */; };
+		C500ADB72ADF339775415596CAEA6408 /* EKAttributes+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7B31B76A1F28D3B02EBF05C234877 /* EKAttributes+Duration.swift */; };
 		C60B01D9CD508925C0CE73F3A494AC50 /* Pods-SwiftEntryKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9593CFAEB0028E56754D269C799C66B0 /* Pods-SwiftEntryKitDemo-dummy.m */; };
 		C82054AF37DEB07E384A1525C3A90447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		CFBE62BACF1B994EEA68A7A2295003C0 /* EKAttributes+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C4AE6229C86E5C8FDD31BC40D2F04 /* EKAttributes+Position.swift */; };
-		D0B3A8D2E7E3ADE9B913352A3D6D2F3E /* EKAttributes+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1BB6B15C9F4AC9ED21A683FBB363D7 /* EKAttributes+Presets.swift */; };
-		D9EE755CDF03DE6021C279B57C02BAE4 /* EKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FB65002A158FDF791E01D492D9D44 /* EKTextField.swift */; };
-		DE109CEC9DCDCC9423153D9589D0D4ED /* EntryCachingHeuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877978E05D6BFEA754560083AB7F48F0 /* EntryCachingHeuristic.swift */; };
-		DEA26C80169059ACBF5DAD6A620BFFF7 /* EKSimpleMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29CA38844AE78BD8657EEB612323F5 /* EKSimpleMessageView.swift */; };
-		DEF4F8B852BDFAC9A5FB8C775AD81CAB /* EKRatingMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB1EB33286FC842B46066F11D32A03 /* EKRatingMessageView.swift */; };
-		DF49F915CB58254581E4C1AEA078698D /* EKNotificationMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30669D1FC914807A4D45DCFEA3BBD01B /* EKNotificationMessageView.swift */; };
-		E23AB882E9218750B7B3C8AECF40F422 /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5FF5E4A21277B6DA5A78FB9B34737 /* QLUtils.swift */; };
-		E9AB70DEB0E5CF88DCA12B2C88327F27 /* HapticFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AABCFCCF542FE615DAFC6632711A27 /* HapticFeedbackGenerator.swift */; };
-		EDE69D962EBCD66FF365C4D462E60F05 /* EKButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921F30FB6E7C7752744C336A0355EFB9 /* EKButtonBarView.swift */; };
-		F1B22F2860CE1152D226241D151D3E0A /* EKAttributes+WindowLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B96208BA39F414972BDFFF4E3B708 /* EKAttributes+WindowLevel.swift */; };
-		F3C5FFD7B8AFDD732F02DE46E33D31D9 /* EKWindowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5CA0241F277A92B0D31744CFD27C8 /* EKWindowProvider.swift */; };
-		F3D082B9187BE680CD5B04C638371F7B /* SwiftEntryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A2E8100DD335F1348FACE146679B38 /* SwiftEntryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8674591BBD3271F25B05D0E0FED05F9 /* EKAttributes+FrameStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B260F6FF0DB9D06C8D76D53238CA0F /* EKAttributes+FrameStyle.swift */; };
-		F88ABC9852A15101B471BDFC989E231B /* EKBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11CF4EE48523493417E6961F809EBD /* EKBackgroundView.swift */; };
-		FEF54C7865BD661E6703FA5339512109 /* EKXStatusBarMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C05FD882019091E699B82686C56B3 /* EKXStatusBarMessageView.swift */; };
-		FF05088FD50F8A7B24274C7CE806F0D8 /* EKProcessingNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475D7AC0E04AE063F03BA34D9FD14F5 /* EKProcessingNoteMessageView.swift */; };
+		CA62C86DB60B58DBB695F04981469600 /* EKButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE260A9339695720EA3CA4D5FB3DAD6 /* EKButtonView.swift */; };
+		CAAA657D5852061EF18D52ACBEAEDB55 /* EKAttributes+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF807D26206B62689BAFF1775EBA1B09 /* EKAttributes+Position.swift */; };
+		CF11D1A2D0927BB813C3F340E63FE3F2 /* EKRatingSymbolsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2768BC926A39740CDBDD968F5E89E47 /* EKRatingSymbolsContainerView.swift */; };
+		D4326A9B74120B39581DB969641AF8DC /* HapticFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE25EF2D6BD157372C0A0CBA8A19B /* HapticFeedbackGenerator.swift */; };
+		D432EDFC10FAC75F751D37F47D4111DD /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627CB31221F9B71512C2D358D32D0F6 /* QLUtils.swift */; };
+		D7E03F8D4550A11FEA5CF98B688954BB /* EKImageNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BE691C49E8246B81DE8F1B22EBE67 /* EKImageNoteMessageView.swift */; };
+		DAB6F7CABFE31837165CBA6BDD0886E5 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505253EE6025D2ECAA4500CCB4AB118 /* UIView+QLContentWrap.swift */; };
+		DCCBD05E38EE25F17F5218D739D48DC2 /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C1BDA5B8F8D90CA40976A6294E6D37 /* UIView+QuickLayout.swift */; };
+		DDC4C1250461D4FF775DCD878DB446F7 /* EntryCachingHeuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0648A09BB513A8621018799DC959A /* EntryCachingHeuristic.swift */; };
+		E57DF5E3D9E28C4C2BDA4353D92BA937 /* EKPopUpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF65C05448EBA6BFF797F56D3184336 /* EKPopUpMessage.swift */; };
+		E8519166815BF59760CE7DACCB51A20F /* EKNotificationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9E62ED1C31CDC3FBF636ACA7B2340 /* EKNotificationMessage.swift */; };
+		F27A6A430BA45453DDBE01346BE82360 /* EKFormMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AFB192933F185286E098A63E6C05BE /* EKFormMessageView.swift */; };
+		F7FDB37C10B3EA73CE84FB11774D484F /* EKAttributes+PositionConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3211D17CBC0997C73261F0E710482E /* EKAttributes+PositionConstraints.swift */; };
+		FA7033F984070A53F1B5EA965D07EDFF /* EKRatingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BD58F707BDD1A23BE64BBD16200285 /* EKRatingMessage.swift */; };
+		FAAA5FE85E6F0B37FE11922AEE148C9E /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6431183D98EE0E448B3A1E2109E95 /* UIColor+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59A59733AF6D32D148DAE34A41C3E01E /* PBXContainerItemProxy */ = {
+		4C85DF7A2A96DAFFEF9CD208EB59328C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FEA6FF0588A91CCD972EDCD698B85647;
 			remoteInfo = SwiftEntryKit;
 		};
-		E4ADB508D9551208DCA82E64F17DF78D /* PBXContainerItemProxy */ = {
+		E1C6B60868F9218F259DE9CCB32B4D7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -108,114 +109,124 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037EA1964B8FA1F5F9A9B5A2FE929DFD /* UIView+Responder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Responder.swift"; sourceTree = "<group>"; };
-		040A68C471AB4C42D19B7E692E23021D /* EntryAppearanceDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryAppearanceDescriptor.swift; sourceTree = "<group>"; };
-		0413E34B4A3A7E2A01498EAC6A019D9E /* SwiftEntryKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftEntryKit-Info.plist"; sourceTree = "<group>"; };
-		053220DCD5893AA4EC84485A7C01A1F3 /* EKStyleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKStyleView.swift; sourceTree = "<group>"; };
-		062A1116E41EC706D87A14DE7539455B /* SwiftEntryKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftEntryKit.swift; path = Source/SwiftEntryKit.swift; sourceTree = "<group>"; };
-		0700E72AADF91E95102A662A7107D663 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		074068C076FF1A622884B7FB47CF56E5 /* EKAttributes+Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Duration.swift"; sourceTree = "<group>"; };
-		0B1BB6B15C9F4AC9ED21A683FBB363D7 /* EKAttributes+Presets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Presets.swift"; sourceTree = "<group>"; };
-		0B5D47C60167FDECAA163C7DE8478AB5 /* EKMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKMessageContentView.swift; sourceTree = "<group>"; };
+		050CA7E60923929289CFE3C4DCA5D05D /* EKWindowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWindowProvider.swift; sourceTree = "<group>"; };
+		08BC6ABD2BE3CD35E87B451927FE270C /* EKAttributes+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Animation.swift"; sourceTree = "<group>"; };
+		0BC4587FE9E4B3BA4579BD82403FFEEA /* EKViewControllerProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKViewControllerProvider.swift; sourceTree = "<group>"; };
 		0C6D2F6A9763A4610B812B9109ACA447 /* Pods-SwiftEntryKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftEntryKitDemo.modulemap"; sourceTree = "<group>"; };
-		0CA64D4312DCDB2CEAA953617959D4D1 /* SwiftEntryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftEntryKit.modulemap; sourceTree = "<group>"; };
-		0FC535C52BE499E7D75A0D82F812B3DE /* EKProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProvider.swift; sourceTree = "<group>"; };
-		0FCCDEFFDE3418400F50C7C650F9F129 /* UIColor+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
-		0FEE03D8D001E2A9D91BB621528A6CB4 /* EKRatingMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingMessage.swift; sourceTree = "<group>"; };
-		107663EA66A8621C99D499E3C0EB6EF9 /* EKAttributes+Validations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Validations.swift"; sourceTree = "<group>"; };
-		166C4AE6229C86E5C8FDD31BC40D2F04 /* EKAttributes+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Position.swift"; sourceTree = "<group>"; };
-		19CD1503AF763970DF91F8DFC0BB675B /* EKAttributes+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Shadow.swift"; sourceTree = "<group>"; };
+		0CF4FDC1B07F207CBE32C4C31144092C /* EKContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKContentView.swift; sourceTree = "<group>"; };
+		19B54F72B9B8D3A26358EBCA5E7BAC75 /* EKRatingSymbolView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingSymbolView.swift; sourceTree = "<group>"; };
+		1B5BC9D46F77A8ECFA0F6C1DD509E686 /* EKMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKMessageContentView.swift; sourceTree = "<group>"; };
+		1BEDA87AA8B52AC0F47E97C21FDF2BDB /* EKXStatusBarMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKXStatusBarMessageView.swift; sourceTree = "<group>"; };
+		1EC90BCD5591A99D94159D2E05999F93 /* SwiftEntryKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftEntryKit.release.xcconfig; sourceTree = "<group>"; };
 		217D74CF28D2726D347E9E85D22057DA /* Pods-SwiftEntryKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEntryKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		21ADC67C888031E3E45AEA5781402B6E /* EKContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKContentView.swift; sourceTree = "<group>"; };
 		2909A9134D532B091BC4BB03EAF83E0D /* Pods-SwiftEntryKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEntryKitDemo-Info.plist"; sourceTree = "<group>"; };
-		291CE888F22A8397EE15644C410966FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		2BD5B31F994B69A7B06FA949163982C9 /* EKPopUpMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKPopUpMessageView.swift; sourceTree = "<group>"; };
-		30669D1FC914807A4D45DCFEA3BBD01B /* EKNotificationMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNotificationMessageView.swift; sourceTree = "<group>"; };
-		312920EE5C2E709F50825FD29188581B /* EKEntryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKEntryView.swift; sourceTree = "<group>"; };
-		338F34CD1E5B10155D9E49C63B71DDEF /* UIViewArray+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewArray+QuickLayout.swift"; sourceTree = "<group>"; };
+		2E71556CCC973830E52F3661A68D266B /* UIApplication+EKAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+EKAppearance.swift"; sourceTree = "<group>"; };
+		30E974A255CF57FA706B46F8B061B817 /* EKWrapperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWrapperView.swift; sourceTree = "<group>"; };
+		329CEFB7B9E899BA067747D5B3AB7FAF /* EKAttributes+StatusBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+StatusBar.swift"; sourceTree = "<group>"; };
+		3627CB31221F9B71512C2D358D32D0F6 /* QLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QLUtils.swift; sourceTree = "<group>"; };
 		3720AACA3DCA014803908A2E0592E7C5 /* Pods-SwiftEntryKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftEntryKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A3F411F735A1B7730A0727CC07B466D /* EKFormMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKFormMessageView.swift; sourceTree = "<group>"; };
-		3F747C635A7B04D8C4DDE408AABB4CD9 /* EKAttributes+Precedence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Precedence.swift"; sourceTree = "<group>"; };
-		4249182DC419BCEC8F6C4DFBC7D860E9 /* EKAttributes+StatusBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+StatusBar.swift"; sourceTree = "<group>"; };
-		46844FBAC6DB28B17B038D1BBCA15FFD /* EKSimpleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKSimpleMessage.swift; sourceTree = "<group>"; };
-		48390ECF66B6525B521B548C139F0ED3 /* EKWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWindow.swift; sourceTree = "<group>"; };
-		4A1755B99ED2F5BA83F6D66BD06F4907 /* EKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKColor.swift; sourceTree = "<group>"; };
-		4F5F2B86FB89B1DEB66770AC504DA8CC /* EKNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNoteMessageView.swift; sourceTree = "<group>"; };
-		51B6A6AF593A19C529B2E359DB859101 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		52CBF679AD36380BBE4B55F3E08997D6 /* UIRectCorner+Short.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIRectCorner+Short.swift"; sourceTree = "<group>"; };
-		54A2E8100DD335F1348FACE146679B38 /* SwiftEntryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftEntryKit-umbrella.h"; sourceTree = "<group>"; };
-		560C05FD882019091E699B82686C56B3 /* EKXStatusBarMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKXStatusBarMessageView.swift; sourceTree = "<group>"; };
-		5CAF0179ED637AF1FB9C024BF1C0F3F6 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		37B629E26AC2D538497B3A7895CF5BEF /* EKAttributes+WindowLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+WindowLevel.swift"; sourceTree = "<group>"; };
+		37CCFFED57E5FD23381337B1768C5370 /* EKAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAttributes.swift; sourceTree = "<group>"; };
+		39E191F34B14175DCCBB05EBD51FD9E7 /* EKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKTextField.swift; sourceTree = "<group>"; };
+		3C72A4CD60BF9B38CFBF4CE634E591ED /* EKSimpleMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKSimpleMessageView.swift; sourceTree = "<group>"; };
+		3EAF9BC82D790C08096AED0C3B05BA42 /* EKAttributes+LifecycleActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+LifecycleActions.swift"; sourceTree = "<group>"; };
+		3EB71A53AF15258C40FDC64F4C0B94B6 /* EKRatingMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingMessageView.swift; sourceTree = "<group>"; };
+		3ED1C4479771D72C0F7877779A8A57CC /* SwiftEntryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftEntryKit-umbrella.h"; sourceTree = "<group>"; };
+		4017B07599C60CAB7EC4B17D1BCCB1CD /* EKPopUpMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKPopUpMessageView.swift; sourceTree = "<group>"; };
+		43E9E62ED1C31CDC3FBF636ACA7B2340 /* EKNotificationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNotificationMessage.swift; sourceTree = "<group>"; };
+		47C7B31B76A1F28D3B02EBF05C234877 /* EKAttributes+Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Duration.swift"; sourceTree = "<group>"; };
+		4A0A5C0301B4FEEE3DEDB0CE81B06EFA /* EKViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKViewController.swift; sourceTree = "<group>"; };
+		4A3A464DC452BDB0575EFEBCD74B3304 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4B1A418448CDF6B0F9205209F624A968 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		52453D72F29C6712446F2B7F4EE4AC84 /* EKAttributes+Scroll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Scroll.swift"; sourceTree = "<group>"; };
+		62BDDBDCA9F863EAF1B4E4EE4D112D10 /* SwiftEntryKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftEntryKit.swift; path = Source/SwiftEntryKit.swift; sourceTree = "<group>"; };
 		62F1B1D97C760AD62E5A49983D4BDFA9 /* Pods-SwiftEntryKitTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftEntryKitTests-frameworks.sh"; sourceTree = "<group>"; };
+		64ED9986D8B821C983B0D30BA5101D6F /* EKNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNoteMessageView.swift; sourceTree = "<group>"; };
 		659C18D29D4B9D963A2AD7360AAACC30 /* Pods-SwiftEntryKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEntryKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		68A2DFA4486B9D03243198134964CAA6 /* EKAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAttributes.swift; sourceTree = "<group>"; };
-		69157402515FC867E80C8594C9755EC6 /* EKWrapperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWrapperView.swift; sourceTree = "<group>"; };
-		6B8C3DD9982DCC628AB4B0A836F28D35 /* EKAttributes+Scroll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Scroll.swift"; sourceTree = "<group>"; };
-		6BE5CA0241F277A92B0D31744CFD27C8 /* EKWindowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWindowProvider.swift; sourceTree = "<group>"; };
-		6CF9E27494CF46F7F4E50605B136CBEE /* EKAttributes+PositionConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+PositionConstraints.swift"; sourceTree = "<group>"; };
+		66F3F9BDF3227FEC70264E4C4CB9111A /* EKAttributes+BackgroundStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+BackgroundStyle.swift"; sourceTree = "<group>"; };
+		6926C455D6B18B9D9460CAF60C0227C9 /* SwiftEntryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftEntryKit.modulemap; sourceTree = "<group>"; };
+		6C2C470E52A58278DDD57D8731BB2E48 /* SwiftEntryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftEntryKit-prefix.pch"; sourceTree = "<group>"; };
+		6DF65C05448EBA6BFF797F56D3184336 /* EKPopUpMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKPopUpMessage.swift; sourceTree = "<group>"; };
+		6FE260A9339695720EA3CA4D5FB3DAD6 /* EKButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKButtonView.swift; sourceTree = "<group>"; };
+		717E5668C058480BE40F09A0AF4AD4FD /* EKAttributes+Precedence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Precedence.swift"; sourceTree = "<group>"; };
+		72620AC7BEDE2EA5150020030719780E /* EKProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProperty.swift; sourceTree = "<group>"; };
+		72BD58F707BDD1A23BE64BBD16200285 /* EKRatingMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingMessage.swift; sourceTree = "<group>"; };
+		74B60293CDF22EC8A706B92B32B78656 /* EKWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKWindow.swift; sourceTree = "<group>"; };
 		78239DB78DD3345BC32A5B876DEA9726 /* Pods-SwiftEntryKitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftEntryKitTests-umbrella.h"; sourceTree = "<group>"; };
-		79B260F6FF0DB9D06C8D76D53238CA0F /* EKAttributes+FrameStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+FrameStyle.swift"; sourceTree = "<group>"; };
-		7C6FE63035DD8E2C960736F2269774BF /* EKAttributes+PopBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+PopBehavior.swift"; sourceTree = "<group>"; };
-		7ECA1A7DC8DD22AB2858A96499BCE251 /* EKAccessoryNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAccessoryNoteMessageView.swift; sourceTree = "<group>"; };
+		79187BE87C651F0417DF894804896C33 /* EKProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProvider.swift; sourceTree = "<group>"; };
+		7923C055257C0A0000788DF463D022E2 /* EKAttributes+FrameStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+FrameStyle.swift"; sourceTree = "<group>"; };
+		7CAFAE97FE00AF442FB587CA49CA095C /* EKSimpleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKSimpleMessage.swift; sourceTree = "<group>"; };
+		7EB0648A09BB513A8621018799DC959A /* EntryCachingHeuristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryCachingHeuristic.swift; sourceTree = "<group>"; };
 		7F6008542D45CF6DA2CF5F20B1B389D9 /* Pods-SwiftEntryKitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEntryKitTests-Info.plist"; sourceTree = "<group>"; };
+		804EE6C3A34959B6CFB9B79F3062B8E1 /* EKAttributes+PopBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+PopBehavior.swift"; sourceTree = "<group>"; };
 		825DCCAAF219130678137286F5E77C47 /* Pods-SwiftEntryKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftEntryKitDemo-frameworks.sh"; sourceTree = "<group>"; };
-		8475D7AC0E04AE063F03BA34D9FD14F5 /* EKProcessingNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProcessingNoteMessageView.swift; sourceTree = "<group>"; };
-		84E4CCEF34CFEFDF8F70F9F7B1593AD4 /* EKAlertMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAlertMessageView.swift; sourceTree = "<group>"; };
-		86B03B31819C4377854124C955D62BB2 /* EKButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKButtonView.swift; sourceTree = "<group>"; };
-		877978E05D6BFEA754560083AB7F48F0 /* EntryCachingHeuristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryCachingHeuristic.swift; sourceTree = "<group>"; };
-		893D6362CB4A96181D1AEABCBC16F462 /* EKRatingSymbolsContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingSymbolsContainerView.swift; sourceTree = "<group>"; };
-		8A5FB65002A158FDF791E01D492D9D44 /* EKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKTextField.swift; sourceTree = "<group>"; };
-		921F30FB6E7C7752744C336A0355EFB9 /* EKButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKButtonBarView.swift; sourceTree = "<group>"; };
+		87AFB192933F185286E098A63E6C05BE /* EKFormMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKFormMessageView.swift; sourceTree = "<group>"; };
+		88F9494A1E6D3D980048246F8B30C398 /* EntryAppearanceDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryAppearanceDescriptor.swift; sourceTree = "<group>"; };
+		8BF13153FF45EAC4F2FB9EB0BAF3FC76 /* EKNotificationMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNotificationMessageView.swift; sourceTree = "<group>"; };
+		9042AC2E64A9876EA3B92208EC18F737 /* SwiftEntryKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftEntryKit.debug.xcconfig; sourceTree = "<group>"; };
+		92C1BDA5B8F8D90CA40976A6294E6D37 /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+QuickLayout.swift"; sourceTree = "<group>"; };
+		936EE24194FCE1A008E02A5722180FBE /* EKAccessoryNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAccessoryNoteMessageView.swift; sourceTree = "<group>"; };
 		9593CFAEB0028E56754D269C799C66B0 /* Pods-SwiftEntryKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftEntryKitDemo-dummy.m"; sourceTree = "<group>"; };
-		98B817B983B2FD19C1F01DA492596504 /* SwiftEntryKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftEntryKit.debug.xcconfig; sourceTree = "<group>"; };
+		95E9A3462D4382A03DB76722E17FC1CD /* UIView+Responder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Responder.swift"; sourceTree = "<group>"; };
+		96713313BA9B99C006CC732430B67288 /* EKProcessingNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProcessingNoteMessageView.swift; sourceTree = "<group>"; };
+		9A7D791273F105D532D3EA73D807DE0F /* EKAttributes+Validations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Validations.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EA9BF6708FF2111AADAB9F76CA29194 /* EKViewControllerProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKViewControllerProvider.swift; sourceTree = "<group>"; };
-		9F29CA38844AE78BD8657EEB612323F5 /* EKSimpleMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKSimpleMessageView.swift; sourceTree = "<group>"; };
 		A04A38B59673DEC84C7286AC1A5DD82E /* Pods-SwiftEntryKitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEntryKitTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A14EAEBB9BEC7C4A28F157DA31131232 /* Pods-SwiftEntryKitDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftEntryKitDemo"; path = Pods_SwiftEntryKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A36EDFDDDCB44E2274758B44600F435B /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
-		A651FDA494972D3E2C08E7EFB66D2E77 /* QLCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QLCompatibility.swift; sourceTree = "<group>"; };
-		A7FB1EB33286FC842B46066F11D32A03 /* EKRatingMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingMessageView.swift; sourceTree = "<group>"; };
-		B396E09DA80676F4B180A2EF376B59F5 /* EKProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKProperty.swift; sourceTree = "<group>"; };
-		B3FA25C916281C26DAC041C3D2AB8914 /* EKPopUpMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKPopUpMessage.swift; sourceTree = "<group>"; };
-		B88E858F02AAA83DAE97D58B4758A22E /* EKViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKViewController.swift; sourceTree = "<group>"; };
-		BD2B96208BA39F414972BDFFF4E3B708 /* EKAttributes+WindowLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+WindowLevel.swift"; sourceTree = "<group>"; };
+		A7E6431183D98EE0E448B3A1E2109E95 /* UIColor+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		AA3211D17CBC0997C73261F0E710482E /* EKAttributes+PositionConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+PositionConstraints.swift"; sourceTree = "<group>"; };
+		AE96D04740BB89E82F17333ADEB496B6 /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		B05B7B95654B5247520CEE664DD5C52B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B2768BC926A39740CDBDD968F5E89E47 /* EKRatingSymbolsContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingSymbolsContainerView.swift; sourceTree = "<group>"; };
+		B410F72B0BC57A8C579396D2E9B0B219 /* EKAttributes+DisplayMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+DisplayMode.swift"; sourceTree = "<group>"; };
+		B505253EE6025D2ECAA4500CCB4AB118 /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
+		B649B8CA8D5595BEE2581263FEFCEF46 /* EKAttributes+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Shadow.swift"; sourceTree = "<group>"; };
+		BE5BD8D8FBF322E22AC84F7B31814457 /* EKRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRootViewController.swift; sourceTree = "<group>"; };
 		BFD8570D08FFA26DC70A6677B52879BE /* Pods-SwiftEntryKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEntryKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C074E7164E0BE8AF7E350F447391E4DD /* SwiftEntryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftEntryKit-dummy.m"; sourceTree = "<group>"; };
-		C1A4F2352231A5345948670AD5536870 /* EKAttributes+LifecycleActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+LifecycleActions.swift"; sourceTree = "<group>"; };
-		C2064E5733B60CD17D85EC4B801B9B1A /* EKAttributes+HapticFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+HapticFeedback.swift"; sourceTree = "<group>"; };
-		C37F7F160C730F0324337CCF8E00E83B /* EKAttributes+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Animation.swift"; sourceTree = "<group>"; };
+		BFFDDB4DF386636FF4609527ACE43DE1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C0696F2A00C4C5C97DF9FC8404998147 /* UIRectCorner+Short.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIRectCorner+Short.swift"; sourceTree = "<group>"; };
 		C563C9CF87F0274D774DB1D0BB8756F1 /* Pods-SwiftEntryKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEntryKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		CAA5FF5E4A21277B6DA5A78FB9B34737 /* QLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QLUtils.swift; sourceTree = "<group>"; };
-		CAFC40A945D53EA9DF20F106D22AC156 /* EKRatingSymbolView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRatingSymbolView.swift; sourceTree = "<group>"; };
-		CB4C98E22A90AC42729377A725B6FE0D /* SwiftEntryKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftEntryKit.release.xcconfig; sourceTree = "<group>"; };
+		C74F09E0D043F560E78267CDB18678A5 /* EKBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKBackgroundView.swift; sourceTree = "<group>"; };
+		C8FAE0ADC151664726AB1DA9A2851841 /* EKAttributes+Presets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Presets.swift"; sourceTree = "<group>"; };
+		CADC15E74165C2A87596A3A8A3260E8D /* EKAttributes+UserInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+UserInteraction.swift"; sourceTree = "<group>"; };
 		CE2F7FD8E3DF8E80B033436940AFED3C /* Pods-SwiftEntryKitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftEntryKitTests.modulemap"; sourceTree = "<group>"; };
+		CF4558A0CC02BDC1129FCF6C5EED2C27 /* EKEntryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKEntryView.swift; sourceTree = "<group>"; };
+		CF807D26206B62689BAFF1775EBA1B09 /* EKAttributes+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+Position.swift"; sourceTree = "<group>"; };
 		D0598CC5B54F64EFF897D87A397E403E /* Pods-SwiftEntryKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftEntryKitDemo-umbrella.h"; sourceTree = "<group>"; };
+		D05EB85B43CA59D81FA85C5685296034 /* EKAlertMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAlertMessage.swift; sourceTree = "<group>"; };
+		D07B3B4E6169172193CBE64C89FA55FB /* EKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKColor.swift; sourceTree = "<group>"; };
 		D124E32A8ED6A6A48F5EBBD4F7156FA9 /* Pods-SwiftEntryKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEntryKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		D1FCA9D0ECAC3803CA8FAD4FDE3E1A57 /* EKNotificationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKNotificationMessage.swift; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D3AECC7540E8CF1831E1888B8C1A458F /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+QuickLayout.swift"; sourceTree = "<group>"; };
-		D56198E067B6B04A7614215412A336A5 /* EKAttributes+UserInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+UserInteraction.swift"; sourceTree = "<group>"; };
-		D9AC7317A00E5A9DCC7B1C134467BE7A /* EKAlertMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAlertMessage.swift; sourceTree = "<group>"; };
+		D38E7B953A757B47A50C6BA52B2BBDE8 /* EKStyleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKStyleView.swift; sourceTree = "<group>"; };
+		D3EFE25EF2D6BD157372C0A0CBA8A19B /* HapticFeedbackGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticFeedbackGenerator.swift; sourceTree = "<group>"; };
+		D87152AC902D7DEE07CB658D47C4B90F /* UIEdgeInsets+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
 		DA5F7E5AA5A762E4504855EAF3216C8A /* SwiftEntryKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftEntryKit; path = SwiftEntryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7DE56E720D81AC3D90007A2F61A084 /* Pods-SwiftEntryKitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftEntryKitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0B81565005F22C6E0E53E0A9542AA56 /* SwiftEntryKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftEntryKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E297371B84321B48F3A589A48FC4B102 /* UIEdgeInsets+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
-		E585F8A5884263E1390FCDDDE3D198FC /* EKAttributes+DisplayMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+DisplayMode.swift"; sourceTree = "<group>"; };
+		E48CF626841806B12A816CC81F42E107 /* UIViewArray+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewArray+QuickLayout.swift"; sourceTree = "<group>"; };
+		E4EB54A0B5AF97280B28DBFDD2B3683C /* QLCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QLCompatibility.swift; sourceTree = "<group>"; };
+		E68498913BA70B1489DB2E237646297A /* EKAlertMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKAlertMessageView.swift; sourceTree = "<group>"; };
+		E6E3EDB68D23588C8A2CD5A415BC1DD4 /* AssociatedWeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssociatedWeakObject.swift; sourceTree = "<group>"; };
+		E70411B2D271AE7520EC78EEE5135ACA /* EKAttributes+HapticFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+HapticFeedback.swift"; sourceTree = "<group>"; };
+		E9449C9C5AFBDDB42FB6A6D914D77ABD /* SwiftEntryKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftEntryKit-Info.plist"; sourceTree = "<group>"; };
+		E9C6D2C657F7C8BB34C36124472D1B3C /* SwiftEntryKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftEntryKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EC11CF4EE48523493417E6961F809EBD /* EKBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKBackgroundView.swift; sourceTree = "<group>"; };
-		EC9355E13A142011B1C5284B59CEC8DB /* EKImageNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKImageNoteMessageView.swift; sourceTree = "<group>"; };
-		ED8064970D4C712D42EFB8CAFCFC6D88 /* UIApplication+EKAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+EKAppearance.swift"; sourceTree = "<group>"; };
-		EFE2A53ECC5A6716E7FF410B5770AA6C /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
-		F258FEA0864B21BD48D0B1A6731646A9 /* SwiftEntryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftEntryKit-prefix.pch"; sourceTree = "<group>"; };
+		EC2C671C54D0916EA5C6C9203F767533 /* SwiftEntryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftEntryKit-dummy.m"; sourceTree = "<group>"; };
+		EE2BE691C49E8246B81DE8F1B22EBE67 /* EKImageNoteMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKImageNoteMessageView.swift; sourceTree = "<group>"; };
 		F352296AFDF8DE73AE8F78DB5150C5A7 /* Pods-SwiftEntryKitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftEntryKitTests-dummy.m"; sourceTree = "<group>"; };
 		F47088C2B383BF12F74E0166C7B52E25 /* Pods-SwiftEntryKitTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftEntryKitTests"; path = Pods_SwiftEntryKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8AABCFCCF542FE615DAFC6632711A27 /* HapticFeedbackGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticFeedbackGenerator.swift; sourceTree = "<group>"; };
-		FAB87AD26A6ECE45E0545783C8E9A3B0 /* EKAttributes+BackgroundStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EKAttributes+BackgroundStyle.swift"; sourceTree = "<group>"; };
-		FEE5A103CB10E47B1F389AE2CED73D07 /* EKRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKRootViewController.swift; sourceTree = "<group>"; };
+		FD1F5622E58D2B35F6C0C5241FEAC1D5 /* EKButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EKButtonBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		882870B2D10FA11954D5BBCA65F395D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B7FFAE53F55FF940E0E073076D182A /* Foundation.framework in Frameworks */,
+				7DF7ED6D5A85F700879BFA88EFDDF8C2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAFF79C079AD948F35442BB67EB8E40D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,18 +243,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D50133CCFB22EEF6F057F228E32BBA7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B94109379269DEB47E4232256345B82 /* Foundation.framework in Frameworks */,
-				144C8E04734F0E93F5E026AE00BB4491 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144B8BD3A8A2B40B880C51CE60D11891 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B05B7B95654B5247520CEE664DD5C52B /* LICENSE */,
+				BFFDDB4DF386636FF4609527ACE43DE1 /* README.md */,
+				E9C6D2C657F7C8BB34C36124472D1B3C /* SwiftEntryKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,54 +281,45 @@
 			path = "Target Support Files/Pods-SwiftEntryKitTests";
 			sourceTree = "<group>";
 		};
-		21BD859FC8389C2DEE85DFE030F2CA2E /* QuickLayout */ = {
+		2A31BA7112816F9BB0638B0E1B1DC988 /* MessagesUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A651FDA494972D3E2C08E7EFB66D2E77 /* QLCompatibility.swift */,
-				CAA5FF5E4A21277B6DA5A78FB9B34737 /* QLUtils.swift */,
-				EFE2A53ECC5A6716E7FF410B5770AA6C /* UIView+QLContentWrap.swift */,
-				D3AECC7540E8CF1831E1888B8C1A458F /* UIView+QuickLayout.swift */,
-				338F34CD1E5B10155D9E49C63B71DDEF /* UIViewArray+QuickLayout.swift */,
+				FD1F5622E58D2B35F6C0C5241FEAC1D5 /* EKButtonBarView.swift */,
+				6FE260A9339695720EA3CA4D5FB3DAD6 /* EKButtonView.swift */,
+				B2768BC926A39740CDBDD968F5E89E47 /* EKRatingSymbolsContainerView.swift */,
+				19B54F72B9B8D3A26358EBCA5E7BAC75 /* EKRatingSymbolView.swift */,
+				39E191F34B14175DCCBB05EBD51FD9E7 /* EKTextField.swift */,
+				88F9494A1E6D3D980048246F8B30C398 /* EntryAppearanceDescriptor.swift */,
 			);
-			name = QuickLayout;
-			path = QuickLayout;
+			name = MessagesUtils;
+			path = MessagesUtils;
 			sourceTree = "<group>";
 		};
-		4165B74A79669D1A8E9FEBA7B9A717AD /* Pod */ = {
+		3C0892CC56A9C894665F0C5BD29AD0FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				291CE888F22A8397EE15644C410966FF /* LICENSE */,
-				51B6A6AF593A19C529B2E359DB859101 /* README.md */,
-				E0B81565005F22C6E0E53E0A9542AA56 /* SwiftEntryKit.podspec */,
+				E6E3EDB68D23588C8A2CD5A415BC1DD4 /* AssociatedWeakObject.swift */,
+				4A3A464DC452BDB0575EFEBCD74B3304 /* GradientView.swift */,
+				D3EFE25EF2D6BD157372C0A0CBA8A19B /* HapticFeedbackGenerator.swift */,
+				95E9A3462D4382A03DB76722E17FC1CD /* UIView+Responder.swift */,
 			);
-			name = Pod;
+			name = Utils;
+			path = Source/Utils;
 			sourceTree = "<group>";
 		};
-		4BA967BBE53D740C2CB15CEFB3A09E4D /* EntryAttributes */ = {
+		3D6A968077551EBF3A93D46488566539 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				68A2DFA4486B9D03243198134964CAA6 /* EKAttributes.swift */,
-				C37F7F160C730F0324337CCF8E00E83B /* EKAttributes+Animation.swift */,
-				FAB87AD26A6ECE45E0545783C8E9A3B0 /* EKAttributes+BackgroundStyle.swift */,
-				E585F8A5884263E1390FCDDDE3D198FC /* EKAttributes+DisplayMode.swift */,
-				074068C076FF1A622884B7FB47CF56E5 /* EKAttributes+Duration.swift */,
-				79B260F6FF0DB9D06C8D76D53238CA0F /* EKAttributes+FrameStyle.swift */,
-				C2064E5733B60CD17D85EC4B801B9B1A /* EKAttributes+HapticFeedback.swift */,
-				C1A4F2352231A5345948670AD5536870 /* EKAttributes+LifecycleActions.swift */,
-				7C6FE63035DD8E2C960736F2269774BF /* EKAttributes+PopBehavior.swift */,
-				166C4AE6229C86E5C8FDD31BC40D2F04 /* EKAttributes+Position.swift */,
-				6CF9E27494CF46F7F4E50605B136CBEE /* EKAttributes+PositionConstraints.swift */,
-				3F747C635A7B04D8C4DDE408AABB4CD9 /* EKAttributes+Precedence.swift */,
-				0B1BB6B15C9F4AC9ED21A683FBB363D7 /* EKAttributes+Presets.swift */,
-				6B8C3DD9982DCC628AB4B0A836F28D35 /* EKAttributes+Scroll.swift */,
-				19CD1503AF763970DF91F8DFC0BB675B /* EKAttributes+Shadow.swift */,
-				4249182DC419BCEC8F6C4DFBC7D860E9 /* EKAttributes+StatusBar.swift */,
-				D56198E067B6B04A7614215412A336A5 /* EKAttributes+UserInteraction.swift */,
-				107663EA66A8621C99D499E3C0EB6EF9 /* EKAttributes+Validations.swift */,
-				BD2B96208BA39F414972BDFFF4E3B708 /* EKAttributes+WindowLevel.swift */,
+				2E71556CCC973830E52F3661A68D266B /* UIApplication+EKAppearance.swift */,
+				A7E6431183D98EE0E448B3A1E2109E95 /* UIColor+Utils.swift */,
+				D87152AC902D7DEE07CB658D47C4B90F /* UIEdgeInsets+Utils.swift */,
+				C0696F2A00C4C5C97DF9FC8404998147 /* UIRectCorner+Short.swift */,
+				AE96D04740BB89E82F17333ADEB496B6 /* UIView+Shadow.swift */,
+				4B1A418448CDF6B0F9205209F624A968 /* UIView+Utils.swift */,
+				A1C71BAA61D17FF0B6647B80B7F87FDA /* QuickLayout */,
 			);
-			name = EntryAttributes;
-			path = EntryAttributes;
+			name = Extensions;
+			path = Source/Extensions;
 			sourceTree = "<group>";
 		};
 		51EA9FA7C39A49553F210B8F94DF5A34 /* Targets Support Files */ = {
@@ -328,21 +331,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		56963F1902C0E8A139774101807C7797 /* MessageViews */ = {
+		55A332F97A0309EE453D32CD654076D6 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				84E4CCEF34CFEFDF8F70F9F7B1593AD4 /* EKAlertMessageView.swift */,
-				3A3F411F735A1B7730A0727CC07B466D /* EKFormMessageView.swift */,
-				0B5D47C60167FDECAA163C7DE8478AB5 /* EKMessageContentView.swift */,
-				30669D1FC914807A4D45DCFEA3BBD01B /* EKNotificationMessageView.swift */,
-				2BD5B31F994B69A7B06FA949163982C9 /* EKPopUpMessageView.swift */,
-				A7FB1EB33286FC842B46066F11D32A03 /* EKRatingMessageView.swift */,
-				9F29CA38844AE78BD8657EEB612323F5 /* EKSimpleMessageView.swift */,
-				E23B8D2A67DB3505714672298DBD3AFF /* MessagesUtils */,
-				B6AACC1855EB74CF869744B3AC54E1D6 /* Notes */,
+				936EE24194FCE1A008E02A5722180FBE /* EKAccessoryNoteMessageView.swift */,
+				EE2BE691C49E8246B81DE8F1B22EBE67 /* EKImageNoteMessageView.swift */,
+				64ED9986D8B821C983B0D30BA5101D6F /* EKNoteMessageView.swift */,
+				96713313BA9B99C006CC732430B67288 /* EKProcessingNoteMessageView.swift */,
+				1BEDA87AA8B52AC0F47E97C21FDF2BDB /* EKXStatusBarMessageView.swift */,
 			);
-			name = MessageViews;
-			path = Source/MessageViews;
+			name = Notes;
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -354,19 +353,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		781EF910E986F8C39D86938136201E98 /* Extensions */ = {
+		5AEF864F518A866A272F3370D43152B5 /* MessageViews */ = {
 			isa = PBXGroup;
 			children = (
-				ED8064970D4C712D42EFB8CAFCFC6D88 /* UIApplication+EKAppearance.swift */,
-				0FCCDEFFDE3418400F50C7C650F9F129 /* UIColor+Utils.swift */,
-				E297371B84321B48F3A589A48FC4B102 /* UIEdgeInsets+Utils.swift */,
-				52CBF679AD36380BBE4B55F3E08997D6 /* UIRectCorner+Short.swift */,
-				A36EDFDDDCB44E2274758B44600F435B /* UIView+Shadow.swift */,
-				5CAF0179ED637AF1FB9C024BF1C0F3F6 /* UIView+Utils.swift */,
-				21BD859FC8389C2DEE85DFE030F2CA2E /* QuickLayout */,
+				E68498913BA70B1489DB2E237646297A /* EKAlertMessageView.swift */,
+				87AFB192933F185286E098A63E6C05BE /* EKFormMessageView.swift */,
+				1B5BC9D46F77A8ECFA0F6C1DD509E686 /* EKMessageContentView.swift */,
+				8BF13153FF45EAC4F2FB9EB0BAF3FC76 /* EKNotificationMessageView.swift */,
+				4017B07599C60CAB7EC4B17D1BCCB1CD /* EKPopUpMessageView.swift */,
+				3EB71A53AF15258C40FDC64F4C0B94B6 /* EKRatingMessageView.swift */,
+				3C72A4CD60BF9B38CFBF4CE634E591ED /* EKSimpleMessageView.swift */,
+				2A31BA7112816F9BB0638B0E1B1DC988 /* MessagesUtils */,
+				55A332F97A0309EE453D32CD654076D6 /* Notes */,
 			);
-			name = Extensions;
-			path = Source/Extensions;
+			name = MessageViews;
+			path = Source/MessageViews;
 			sourceTree = "<group>";
 		};
 		782EBC3ECB80CAFA27E5D2F6442EE0C2 /* Pods-SwiftEntryKitDemo */ = {
@@ -386,59 +387,80 @@
 			path = "Target Support Files/Pods-SwiftEntryKitDemo";
 			sourceTree = "<group>";
 		};
-		894E75A076A6B4505FFA2347BCEF5B6A /* Utils */ = {
+		A1C71BAA61D17FF0B6647B80B7F87FDA /* QuickLayout */ = {
 			isa = PBXGroup;
 			children = (
-				0700E72AADF91E95102A662A7107D663 /* GradientView.swift */,
-				F8AABCFCCF542FE615DAFC6632711A27 /* HapticFeedbackGenerator.swift */,
-				037EA1964B8FA1F5F9A9B5A2FE929DFD /* UIView+Responder.swift */,
+				E4EB54A0B5AF97280B28DBFDD2B3683C /* QLCompatibility.swift */,
+				3627CB31221F9B71512C2D358D32D0F6 /* QLUtils.swift */,
+				B505253EE6025D2ECAA4500CCB4AB118 /* UIView+QLContentWrap.swift */,
+				92C1BDA5B8F8D90CA40976A6294E6D37 /* UIView+QuickLayout.swift */,
+				E48CF626841806B12A816CC81F42E107 /* UIViewArray+QuickLayout.swift */,
 			);
-			name = Utils;
-			path = Source/Utils;
+			name = QuickLayout;
+			path = QuickLayout;
 			sourceTree = "<group>";
 		};
-		B6AACC1855EB74CF869744B3AC54E1D6 /* Notes */ = {
+		AAD2ACD79EB465AF99385D05D35EAA07 /* SwiftEntryKit */ = {
 			isa = PBXGroup;
 			children = (
-				7ECA1A7DC8DD22AB2858A96499BCE251 /* EKAccessoryNoteMessageView.swift */,
-				EC9355E13A142011B1C5284B59CEC8DB /* EKImageNoteMessageView.swift */,
-				4F5F2B86FB89B1DEB66770AC504DA8CC /* EKNoteMessageView.swift */,
-				8475D7AC0E04AE063F03BA34D9FD14F5 /* EKProcessingNoteMessageView.swift */,
-				560C05FD882019091E699B82686C56B3 /* EKXStatusBarMessageView.swift */,
+				62BDDBDCA9F863EAF1B4E4EE4D112D10 /* SwiftEntryKit.swift */,
+				3D6A968077551EBF3A93D46488566539 /* Extensions */,
+				C8A8FDB5F34C8DF8A3D81755FE087E7A /* Infra */,
+				5AEF864F518A866A272F3370D43152B5 /* MessageViews */,
+				F2EA76A3EB9002EC150CC4C486F9C5E7 /* Model */,
+				144B8BD3A8A2B40B880C51CE60D11891 /* Pod */,
+				FC7AE9FD98F3A12B2DD6BC97E8249C3A /* Support Files */,
+				3C0892CC56A9C894665F0C5BD29AD0FF /* Utils */,
 			);
-			name = Notes;
-			path = Notes;
+			name = SwiftEntryKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		B73203C5AAAAE47A6FC317748378663F /* Support Files */ = {
+		C8A8FDB5F34C8DF8A3D81755FE087E7A /* Infra */ = {
 			isa = PBXGroup;
 			children = (
-				0CA64D4312DCDB2CEAA953617959D4D1 /* SwiftEntryKit.modulemap */,
-				C074E7164E0BE8AF7E350F447391E4DD /* SwiftEntryKit-dummy.m */,
-				0413E34B4A3A7E2A01498EAC6A019D9E /* SwiftEntryKit-Info.plist */,
-				F258FEA0864B21BD48D0B1A6731646A9 /* SwiftEntryKit-prefix.pch */,
-				54A2E8100DD335F1348FACE146679B38 /* SwiftEntryKit-umbrella.h */,
-				98B817B983B2FD19C1F01DA492596504 /* SwiftEntryKit.debug.xcconfig */,
-				CB4C98E22A90AC42729377A725B6FE0D /* SwiftEntryKit.release.xcconfig */,
+				C74F09E0D043F560E78267CDB18678A5 /* EKBackgroundView.swift */,
+				0CF4FDC1B07F207CBE32C4C31144092C /* EKContentView.swift */,
+				CF4558A0CC02BDC1129FCF6C5EED2C27 /* EKEntryView.swift */,
+				79187BE87C651F0417DF894804896C33 /* EKProvider.swift */,
+				BE5BD8D8FBF322E22AC84F7B31814457 /* EKRootViewController.swift */,
+				D38E7B953A757B47A50C6BA52B2BBDE8 /* EKStyleView.swift */,
+				4A0A5C0301B4FEEE3DEDB0CE81B06EFA /* EKViewController.swift */,
+				0BC4587FE9E4B3BA4579BD82403FFEEA /* EKViewControllerProvider.swift */,
+				74B60293CDF22EC8A706B92B32B78656 /* EKWindow.swift */,
+				050CA7E60923929289CFE3C4DCA5D05D /* EKWindowProvider.swift */,
+				30E974A255CF57FA706B46F8B061B817 /* EKWrapperView.swift */,
+				7EB0648A09BB513A8621018799DC959A /* EntryCachingHeuristic.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftEntryKit";
+			name = Infra;
+			path = Source/Infra;
 			sourceTree = "<group>";
 		};
-		CABA9009F5249C61C90E1D5C55466644 /* Model */ = {
+		C99A23A97B40DA747AE7A2D9359BF449 /* EntryAttributes */ = {
 			isa = PBXGroup;
 			children = (
-				D9AC7317A00E5A9DCC7B1C134467BE7A /* EKAlertMessage.swift */,
-				4A1755B99ED2F5BA83F6D66BD06F4907 /* EKColor.swift */,
-				D1FCA9D0ECAC3803CA8FAD4FDE3E1A57 /* EKNotificationMessage.swift */,
-				B3FA25C916281C26DAC041C3D2AB8914 /* EKPopUpMessage.swift */,
-				B396E09DA80676F4B180A2EF376B59F5 /* EKProperty.swift */,
-				0FEE03D8D001E2A9D91BB621528A6CB4 /* EKRatingMessage.swift */,
-				46844FBAC6DB28B17B038D1BBCA15FFD /* EKSimpleMessage.swift */,
-				4BA967BBE53D740C2CB15CEFB3A09E4D /* EntryAttributes */,
+				37CCFFED57E5FD23381337B1768C5370 /* EKAttributes.swift */,
+				08BC6ABD2BE3CD35E87B451927FE270C /* EKAttributes+Animation.swift */,
+				66F3F9BDF3227FEC70264E4C4CB9111A /* EKAttributes+BackgroundStyle.swift */,
+				B410F72B0BC57A8C579396D2E9B0B219 /* EKAttributes+DisplayMode.swift */,
+				47C7B31B76A1F28D3B02EBF05C234877 /* EKAttributes+Duration.swift */,
+				7923C055257C0A0000788DF463D022E2 /* EKAttributes+FrameStyle.swift */,
+				E70411B2D271AE7520EC78EEE5135ACA /* EKAttributes+HapticFeedback.swift */,
+				3EAF9BC82D790C08096AED0C3B05BA42 /* EKAttributes+LifecycleActions.swift */,
+				804EE6C3A34959B6CFB9B79F3062B8E1 /* EKAttributes+PopBehavior.swift */,
+				CF807D26206B62689BAFF1775EBA1B09 /* EKAttributes+Position.swift */,
+				AA3211D17CBC0997C73261F0E710482E /* EKAttributes+PositionConstraints.swift */,
+				717E5668C058480BE40F09A0AF4AD4FD /* EKAttributes+Precedence.swift */,
+				C8FAE0ADC151664726AB1DA9A2851841 /* EKAttributes+Presets.swift */,
+				52453D72F29C6712446F2B7F4EE4AC84 /* EKAttributes+Scroll.swift */,
+				B649B8CA8D5595BEE2581263FEFCEF46 /* EKAttributes+Shadow.swift */,
+				329CEFB7B9E899BA067747D5B3AB7FAF /* EKAttributes+StatusBar.swift */,
+				CADC15E74165C2A87596A3A8A3260E8D /* EKAttributes+UserInteraction.swift */,
+				9A7D791273F105D532D3EA73D807DE0F /* EKAttributes+Validations.swift */,
+				37B629E26AC2D538497B3A7895CF5BEF /* EKAttributes+WindowLevel.swift */,
 			);
-			name = Model;
-			path = Source/Model;
+			name = EntryAttributes;
+			path = EntryAttributes;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -452,46 +474,12 @@
 			);
 			sourceTree = "<group>";
 		};
-		DAC910D2EAB95927B2D9015C11EA15A4 /* Infra */ = {
-			isa = PBXGroup;
-			children = (
-				EC11CF4EE48523493417E6961F809EBD /* EKBackgroundView.swift */,
-				21ADC67C888031E3E45AEA5781402B6E /* EKContentView.swift */,
-				312920EE5C2E709F50825FD29188581B /* EKEntryView.swift */,
-				0FC535C52BE499E7D75A0D82F812B3DE /* EKProvider.swift */,
-				FEE5A103CB10E47B1F389AE2CED73D07 /* EKRootViewController.swift */,
-				053220DCD5893AA4EC84485A7C01A1F3 /* EKStyleView.swift */,
-				B88E858F02AAA83DAE97D58B4758A22E /* EKViewController.swift */,
-				9EA9BF6708FF2111AADAB9F76CA29194 /* EKViewControllerProvider.swift */,
-				48390ECF66B6525B521B548C139F0ED3 /* EKWindow.swift */,
-				6BE5CA0241F277A92B0D31744CFD27C8 /* EKWindowProvider.swift */,
-				69157402515FC867E80C8594C9755EC6 /* EKWrapperView.swift */,
-				877978E05D6BFEA754560083AB7F48F0 /* EntryCachingHeuristic.swift */,
-			);
-			name = Infra;
-			path = Source/Infra;
-			sourceTree = "<group>";
-		};
 		DE1A6CB57FB2556E66BBD204D206C703 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F6A260656E01DFFA9BC4C88FF4678E4F /* SwiftEntryKit */,
+				AAD2ACD79EB465AF99385D05D35EAA07 /* SwiftEntryKit */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E23B8D2A67DB3505714672298DBD3AFF /* MessagesUtils */ = {
-			isa = PBXGroup;
-			children = (
-				921F30FB6E7C7752744C336A0355EFB9 /* EKButtonBarView.swift */,
-				86B03B31819C4377854124C955D62BB2 /* EKButtonView.swift */,
-				893D6362CB4A96181D1AEABCBC16F462 /* EKRatingSymbolsContainerView.swift */,
-				CAFC40A945D53EA9DF20F106D22AC156 /* EKRatingSymbolView.swift */,
-				8A5FB65002A158FDF791E01D492D9D44 /* EKTextField.swift */,
-				040A68C471AB4C42D19B7E692E23021D /* EntryAppearanceDescriptor.swift */,
-			);
-			name = MessagesUtils;
-			path = MessagesUtils;
 			sourceTree = "<group>";
 		};
 		EA55FF6C4388512B5E53F22767C7731E /* Products */ = {
@@ -504,20 +492,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6A260656E01DFFA9BC4C88FF4678E4F /* SwiftEntryKit */ = {
+		F2EA76A3EB9002EC150CC4C486F9C5E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				062A1116E41EC706D87A14DE7539455B /* SwiftEntryKit.swift */,
-				781EF910E986F8C39D86938136201E98 /* Extensions */,
-				DAC910D2EAB95927B2D9015C11EA15A4 /* Infra */,
-				56963F1902C0E8A139774101807C7797 /* MessageViews */,
-				CABA9009F5249C61C90E1D5C55466644 /* Model */,
-				4165B74A79669D1A8E9FEBA7B9A717AD /* Pod */,
-				B73203C5AAAAE47A6FC317748378663F /* Support Files */,
-				894E75A076A6B4505FFA2347BCEF5B6A /* Utils */,
+				D05EB85B43CA59D81FA85C5685296034 /* EKAlertMessage.swift */,
+				D07B3B4E6169172193CBE64C89FA55FB /* EKColor.swift */,
+				43E9E62ED1C31CDC3FBF636ACA7B2340 /* EKNotificationMessage.swift */,
+				6DF65C05448EBA6BFF797F56D3184336 /* EKPopUpMessage.swift */,
+				72620AC7BEDE2EA5150020030719780E /* EKProperty.swift */,
+				72BD58F707BDD1A23BE64BBD16200285 /* EKRatingMessage.swift */,
+				7CAFAE97FE00AF442FB587CA49CA095C /* EKSimpleMessage.swift */,
+				C99A23A97B40DA747AE7A2D9359BF449 /* EntryAttributes */,
 			);
-			name = SwiftEntryKit;
-			path = ../..;
+			name = Model;
+			path = Source/Model;
+			sourceTree = "<group>";
+		};
+		FC7AE9FD98F3A12B2DD6BC97E8249C3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6926C455D6B18B9D9460CAF60C0227C9 /* SwiftEntryKit.modulemap */,
+				EC2C671C54D0916EA5C6C9203F767533 /* SwiftEntryKit-dummy.m */,
+				E9449C9C5AFBDDB42FB6A6D914D77ABD /* SwiftEntryKit-Info.plist */,
+				6C2C470E52A58278DDD57D8731BB2E48 /* SwiftEntryKit-prefix.pch */,
+				3ED1C4479771D72C0F7877779A8A57CC /* SwiftEntryKit-umbrella.h */,
+				9042AC2E64A9876EA3B92208EC18F737 /* SwiftEntryKit.debug.xcconfig */,
+				1EC90BCD5591A99D94159D2E05999F93 /* SwiftEntryKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftEntryKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,19 +534,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A860A18592BDD41979BB8F6AB2D9B69F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3D082B9187BE680CD5B04C638371F7B /* SwiftEntryKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6BAD1529D8C727E12D41EDF7AD9152D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				14DE35A5C2A9CDA68974BB63E54E980E /* Pods-SwiftEntryKitTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC14945BF8F3476E47A934F48455B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FDDDBB68154DC580333E48E5D0AB39 /* SwiftEntryKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +565,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A251ECB77D4AF32B7C55452432DF0BA /* PBXTargetDependency */,
+				885C6E9F3C7A74CAD184473BD414CD17 /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftEntryKitDemo";
 			productName = Pods_SwiftEntryKitDemo;
@@ -581,7 +584,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4DF58D74F4D7C81303A5916B63143C2C /* PBXTargetDependency */,
+				2F2B2D9B015FB100F696C8D4B0C601DF /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftEntryKitTests";
 			productName = Pods_SwiftEntryKitTests;
@@ -590,12 +593,12 @@
 		};
 		FEA6FF0588A91CCD972EDCD698B85647 /* SwiftEntryKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B06408FFDD0FB0AFD865FF32844FAF5D /* Build configuration list for PBXNativeTarget "SwiftEntryKit" */;
+			buildConfigurationList = 3148F3E2E18E96BEFBDF20D035108550 /* Build configuration list for PBXNativeTarget "SwiftEntryKit" */;
 			buildPhases = (
-				A860A18592BDD41979BB8F6AB2D9B69F /* Headers */,
-				6D1F08F07E2F68E2C892E75D70867DC3 /* Sources */,
-				D50133CCFB22EEF6F057F228E32BBA7A /* Frameworks */,
-				534F6D649A05556C3D984413DE814261 /* Resources */,
+				F5FC14945BF8F3476E47A934F48455B2 /* Headers */,
+				6CB854FA8B2E2112D286382839414F68 /* Sources */,
+				882870B2D10FA11954D5BBCA65F395D1 /* Frameworks */,
+				AACBD39E21476A25E3AC1F55AB664293 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -643,7 +646,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		534F6D649A05556C3D984413DE814261 /* Resources */ = {
+		AACBD39E21476A25E3AC1F55AB664293 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -660,82 +663,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D1F08F07E2F68E2C892E75D70867DC3 /* Sources */ = {
+		6CB854FA8B2E2112D286382839414F68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8880DB405A592D7B4CEFB4BD4DC8622A /* EKAccessoryNoteMessageView.swift in Sources */,
-				5B3CF950163729C34A76F23A3B5CC49F /* EKAlertMessage.swift in Sources */,
-				53BD8FD6E8FD67C1AA5E01E67EFF253B /* EKAlertMessageView.swift in Sources */,
-				0F282003645744C4D672B0E276B26A6F /* EKAttributes.swift in Sources */,
-				04F4AC530F3148906C7A565EF62D5821 /* EKAttributes+Animation.swift in Sources */,
-				A5419B87CBC4EE54686BC63651CDECB5 /* EKAttributes+BackgroundStyle.swift in Sources */,
-				8BC28F57B167758CE19DBC220DE9A4E8 /* EKAttributes+DisplayMode.swift in Sources */,
-				7DE0D63248C7BB0F95B1D5FA89BB9064 /* EKAttributes+Duration.swift in Sources */,
-				F8674591BBD3271F25B05D0E0FED05F9 /* EKAttributes+FrameStyle.swift in Sources */,
-				11324EBDE6250F9164A1D5313F4CC649 /* EKAttributes+HapticFeedback.swift in Sources */,
-				70136A7132336C8BE8B7C1A6EC6D8E88 /* EKAttributes+LifecycleActions.swift in Sources */,
-				0340D642F370BF4CD6E2381546DEAD74 /* EKAttributes+PopBehavior.swift in Sources */,
-				CFBE62BACF1B994EEA68A7A2295003C0 /* EKAttributes+Position.swift in Sources */,
-				677D11ED14AFCE2626CAD208D2AFBF28 /* EKAttributes+PositionConstraints.swift in Sources */,
-				B26A0C55E788EAC73973D70B64B6495E /* EKAttributes+Precedence.swift in Sources */,
-				D0B3A8D2E7E3ADE9B913352A3D6D2F3E /* EKAttributes+Presets.swift in Sources */,
-				7F174C1B4D7E551B0982F33BA18CC18F /* EKAttributes+Scroll.swift in Sources */,
-				10AB2A7B849EB7E588E351123EFF9304 /* EKAttributes+Shadow.swift in Sources */,
-				5B915C40C0FCE64A8A56B2420106577C /* EKAttributes+StatusBar.swift in Sources */,
-				774B5457BA1380758C57EBBE7C4DDA99 /* EKAttributes+UserInteraction.swift in Sources */,
-				933ED90F98EF4F5629C950318543FE9D /* EKAttributes+Validations.swift in Sources */,
-				F1B22F2860CE1152D226241D151D3E0A /* EKAttributes+WindowLevel.swift in Sources */,
-				F88ABC9852A15101B471BDFC989E231B /* EKBackgroundView.swift in Sources */,
-				EDE69D962EBCD66FF365C4D462E60F05 /* EKButtonBarView.swift in Sources */,
-				88A686B79DAAA12309576725114BD18C /* EKButtonView.swift in Sources */,
-				011547E2D144F7EFFB0EFF20358337FA /* EKColor.swift in Sources */,
-				6A46D73F9171006BCE87ECEAA6A0726F /* EKContentView.swift in Sources */,
-				2F65E1694D27031BB676165F3BCA36E8 /* EKEntryView.swift in Sources */,
-				8FC64CADB852B86C15BCD58C66015374 /* EKFormMessageView.swift in Sources */,
-				0472B3486DDB3D7125240102EAF289E0 /* EKImageNoteMessageView.swift in Sources */,
-				939CCFD2169BFE7958D66004A06C6F4C /* EKMessageContentView.swift in Sources */,
-				5E3AD32EAF13E727A0DCD254F22D5EEF /* EKNoteMessageView.swift in Sources */,
-				8A6226C3A07467566BA0927AA32AEBBF /* EKNotificationMessage.swift in Sources */,
-				DF49F915CB58254581E4C1AEA078698D /* EKNotificationMessageView.swift in Sources */,
-				50C31234673094CCCE1C6EECAD74C2F2 /* EKPopUpMessage.swift in Sources */,
-				51E7940BBA7307CECF057959364498CE /* EKPopUpMessageView.swift in Sources */,
-				FF05088FD50F8A7B24274C7CE806F0D8 /* EKProcessingNoteMessageView.swift in Sources */,
-				24B928FFCAA304F8C5704E1ED15DF322 /* EKProperty.swift in Sources */,
-				1D81A114D6A9A9ECAC21181289CC60AD /* EKProvider.swift in Sources */,
-				84FC9524B7658911EC6C520906ED8A4B /* EKRatingMessage.swift in Sources */,
-				DEF4F8B852BDFAC9A5FB8C775AD81CAB /* EKRatingMessageView.swift in Sources */,
-				9241A09485EC34D5EBD13539F30B0F5E /* EKRatingSymbolsContainerView.swift in Sources */,
-				0F3BBC6BBFDE3443595258FB4B778247 /* EKRatingSymbolView.swift in Sources */,
-				22D3CA2D81CDAEFF2E7E331D38BBE6A7 /* EKRootViewController.swift in Sources */,
-				28F74B02E222AE6DDD75C8528C549CC5 /* EKSimpleMessage.swift in Sources */,
-				DEA26C80169059ACBF5DAD6A620BFFF7 /* EKSimpleMessageView.swift in Sources */,
-				BDE5D250DDA815100FF58DAD08D2B9FB /* EKStyleView.swift in Sources */,
-				D9EE755CDF03DE6021C279B57C02BAE4 /* EKTextField.swift in Sources */,
-				41FF75E1E8619951EB777478B523B469 /* EKViewController.swift in Sources */,
-				6C0E0C3A6AAA060A821B4135C035B5BE /* EKViewControllerProvider.swift in Sources */,
-				B7B2355D57EDD19EE4DFADFB64300ACA /* EKWindow.swift in Sources */,
-				F3C5FFD7B8AFDD732F02DE46E33D31D9 /* EKWindowProvider.swift in Sources */,
-				BAA299A8C2AED09C7129BB94841D63A4 /* EKWrapperView.swift in Sources */,
-				FEF54C7865BD661E6703FA5339512109 /* EKXStatusBarMessageView.swift in Sources */,
-				6CF8F80AF5F0832D8EE717C1ED410633 /* EntryAppearanceDescriptor.swift in Sources */,
-				DE109CEC9DCDCC9423153D9589D0D4ED /* EntryCachingHeuristic.swift in Sources */,
-				77FE5C7E7ECD409F9453827CC8C316D8 /* GradientView.swift in Sources */,
-				E9AB70DEB0E5CF88DCA12B2C88327F27 /* HapticFeedbackGenerator.swift in Sources */,
-				27FC98E4C7EFBD35B2335C516B8E43B7 /* QLCompatibility.swift in Sources */,
-				E23AB882E9218750B7B3C8AECF40F422 /* QLUtils.swift in Sources */,
-				6EB23ED2353DFFDBC7F2F18EF0CEEA57 /* SwiftEntryKit.swift in Sources */,
-				662894766BE25238B66FFF083C3E61CF /* SwiftEntryKit-dummy.m in Sources */,
-				34D98F1DC0F833D48AD25A4B4CA4AC6F /* UIApplication+EKAppearance.swift in Sources */,
-				B1077822453B66737D98302DE1A54EE4 /* UIColor+Utils.swift in Sources */,
-				5384F82309554C3685C15659E7C4BD50 /* UIEdgeInsets+Utils.swift in Sources */,
-				108BBEC8223CD1271D602C4572ACCFDE /* UIRectCorner+Short.swift in Sources */,
-				1115AB395B4DE045EC01FF84C62165F4 /* UIView+QLContentWrap.swift in Sources */,
-				45A437D459C9290ADBC1587134A406FE /* UIView+QuickLayout.swift in Sources */,
-				01EAE2EC1263BE74D53DD561CDA8FCFC /* UIView+Responder.swift in Sources */,
-				8EF0F4E27C18C6C84958D8399D88E6A2 /* UIView+Shadow.swift in Sources */,
-				5DA7020E7188C4C991A5ED4B21137D45 /* UIView+Utils.swift in Sources */,
-				4CF12415AB2ADBF3BFB457831917A403 /* UIViewArray+QuickLayout.swift in Sources */,
+				9A436876E23735698D82F9B925D69BF2 /* AssociatedWeakObject.swift in Sources */,
+				B2ACFE20F4DAA50C90DF0D7B18943575 /* EKAccessoryNoteMessageView.swift in Sources */,
+				25C1A52964109CB769C5DCFF4B43487D /* EKAlertMessage.swift in Sources */,
+				68609C8B054443F363F1FE1A4F3CD793 /* EKAlertMessageView.swift in Sources */,
+				96E7FBC83F5B0F99D15D06BFFA872EF8 /* EKAttributes.swift in Sources */,
+				6526A653774228292A73F71C6C1C3877 /* EKAttributes+Animation.swift in Sources */,
+				24DD9E4387976DADF718D60974354736 /* EKAttributes+BackgroundStyle.swift in Sources */,
+				99691F1768F29B318C174CDF7519A28B /* EKAttributes+DisplayMode.swift in Sources */,
+				C500ADB72ADF339775415596CAEA6408 /* EKAttributes+Duration.swift in Sources */,
+				1AC197AE2E2E24D16A214E3FC48102D8 /* EKAttributes+FrameStyle.swift in Sources */,
+				2F8456D344B082780143EE33DB5A033F /* EKAttributes+HapticFeedback.swift in Sources */,
+				366EF91ED6DA44EF707C900B418BADAE /* EKAttributes+LifecycleActions.swift in Sources */,
+				38A934D64BA13B6FCF840A39DC8A0172 /* EKAttributes+PopBehavior.swift in Sources */,
+				CAAA657D5852061EF18D52ACBEAEDB55 /* EKAttributes+Position.swift in Sources */,
+				F7FDB37C10B3EA73CE84FB11774D484F /* EKAttributes+PositionConstraints.swift in Sources */,
+				5A7B4FAAE1CC2109B7EEB3471D220A0F /* EKAttributes+Precedence.swift in Sources */,
+				88288003D8F6EAFD0B4CC9CF38110D79 /* EKAttributes+Presets.swift in Sources */,
+				5965849ED3959B52689DDABB83597571 /* EKAttributes+Scroll.swift in Sources */,
+				89E3C78E6E2B8D03B7B62CAFDDF1DD51 /* EKAttributes+Shadow.swift in Sources */,
+				6258B019B39D5F7F7D5620D241EB6C05 /* EKAttributes+StatusBar.swift in Sources */,
+				C1C1B9400D4ECCE8247ADFA896245E32 /* EKAttributes+UserInteraction.swift in Sources */,
+				27205954A90FE60DC3C6EAE2A0508F78 /* EKAttributes+Validations.swift in Sources */,
+				BB3D833EAAEBEEF3DDBE01E8A63C6740 /* EKAttributes+WindowLevel.swift in Sources */,
+				BD825006DD5F95C96D1F09A4730A8C2D /* EKBackgroundView.swift in Sources */,
+				BDCBB3BA2417EF12DF1989E5D9476F1C /* EKButtonBarView.swift in Sources */,
+				CA62C86DB60B58DBB695F04981469600 /* EKButtonView.swift in Sources */,
+				2D7EEBE49E3376A64E92464C5512D61D /* EKColor.swift in Sources */,
+				2551829FDD76F7917D1A01FB7BC5D02C /* EKContentView.swift in Sources */,
+				7F8A2DB22DDD406DC3D30EA346CFDC78 /* EKEntryView.swift in Sources */,
+				F27A6A430BA45453DDBE01346BE82360 /* EKFormMessageView.swift in Sources */,
+				D7E03F8D4550A11FEA5CF98B688954BB /* EKImageNoteMessageView.swift in Sources */,
+				1E80583A4AEBAA99D5EE477CF764A3A9 /* EKMessageContentView.swift in Sources */,
+				1A021E0BB80D534AC8DE27DF0A2BDA80 /* EKNoteMessageView.swift in Sources */,
+				E8519166815BF59760CE7DACCB51A20F /* EKNotificationMessage.swift in Sources */,
+				695C483F19BA8449D3BCF40DB0A27FE9 /* EKNotificationMessageView.swift in Sources */,
+				E57DF5E3D9E28C4C2BDA4353D92BA937 /* EKPopUpMessage.swift in Sources */,
+				27AF4226B53282362FD02D921094895E /* EKPopUpMessageView.swift in Sources */,
+				B2B075F0533413799D2FB20F3D6283D3 /* EKProcessingNoteMessageView.swift in Sources */,
+				316434F396F7FFE7DF804A1F5AF46534 /* EKProperty.swift in Sources */,
+				61A2CE93B3A550E0ED74D29F124CA583 /* EKProvider.swift in Sources */,
+				FA7033F984070A53F1B5EA965D07EDFF /* EKRatingMessage.swift in Sources */,
+				2AA6DA744AD4888CCEBEF1CBEA658386 /* EKRatingMessageView.swift in Sources */,
+				CF11D1A2D0927BB813C3F340E63FE3F2 /* EKRatingSymbolsContainerView.swift in Sources */,
+				AF7F1AA2046A6AAD228C4D83E8E85869 /* EKRatingSymbolView.swift in Sources */,
+				BAEDA0CD77CD7CE731743B1534BAC32E /* EKRootViewController.swift in Sources */,
+				A2AD475BB61E8714B5E82F8BF36033D9 /* EKSimpleMessage.swift in Sources */,
+				181FEBAE4101E89D135251422E76D64E /* EKSimpleMessageView.swift in Sources */,
+				9134BABE0FABF1EDC5174FC9AA5668C4 /* EKStyleView.swift in Sources */,
+				5F3F23FB890F47E4BBB1BBF641F7973A /* EKTextField.swift in Sources */,
+				2E6D7CB26A947E0C6CC7C92ED2BB6E92 /* EKViewController.swift in Sources */,
+				65AC68F670241772A9B82CCD0B32C11D /* EKViewControllerProvider.swift in Sources */,
+				BC6C4B3DF4288BB4D054D309E0514BA8 /* EKWindow.swift in Sources */,
+				3DED449DCACD89E04AFE52D1B5A1E09F /* EKWindowProvider.swift in Sources */,
+				81C3CBCD8DC62113ED39CCEDCC43E332 /* EKWrapperView.swift in Sources */,
+				C428B046C8BB9B30D2B696EBD5864988 /* EKXStatusBarMessageView.swift in Sources */,
+				4CE1AF4A2DC6D1A09B1FCF0B6240F7EE /* EntryAppearanceDescriptor.swift in Sources */,
+				DDC4C1250461D4FF775DCD878DB446F7 /* EntryCachingHeuristic.swift in Sources */,
+				C3E348295B59AFC06406428757FE5E23 /* GradientView.swift in Sources */,
+				D4326A9B74120B39581DB969641AF8DC /* HapticFeedbackGenerator.swift in Sources */,
+				A6E218A023C7B33130AB544744239E2E /* QLCompatibility.swift in Sources */,
+				D432EDFC10FAC75F751D37F47D4111DD /* QLUtils.swift in Sources */,
+				33F22026925172D5C0A0494FF64942AB /* SwiftEntryKit.swift in Sources */,
+				92260FDF2EEA1455D608498571F8468F /* SwiftEntryKit-dummy.m in Sources */,
+				0CC93C78BD0A553B9A3C134A88C49B3B /* UIApplication+EKAppearance.swift in Sources */,
+				FAAA5FE85E6F0B37FE11922AEE148C9E /* UIColor+Utils.swift in Sources */,
+				039EB04CBFF460693E8BFAEAA1B2FFD2 /* UIEdgeInsets+Utils.swift in Sources */,
+				6FD7F6C6F078974FDBA6F27F0DDCB5E1 /* UIRectCorner+Short.swift in Sources */,
+				DAB6F7CABFE31837165CBA6BDD0886E5 /* UIView+QLContentWrap.swift in Sources */,
+				DCCBD05E38EE25F17F5218D739D48DC2 /* UIView+QuickLayout.swift in Sources */,
+				1594295C05067CE6DFBDF4BEDE7135CC /* UIView+Responder.swift in Sources */,
+				101A31F37463BDFD2085A88B334FBBC5 /* UIView+Shadow.swift in Sources */,
+				239BC6A67738D36E528536FC5058E621 /* UIView+Utils.swift in Sources */,
+				6E71C320F0CDA6D0357DED426D3F5380 /* UIViewArray+QuickLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,17 +762,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4DF58D74F4D7C81303A5916B63143C2C /* PBXTargetDependency */ = {
+		2F2B2D9B015FB100F696C8D4B0C601DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftEntryKit;
 			target = FEA6FF0588A91CCD972EDCD698B85647 /* SwiftEntryKit */;
-			targetProxy = E4ADB508D9551208DCA82E64F17DF78D /* PBXContainerItemProxy */;
+			targetProxy = E1C6B60868F9218F259DE9CCB32B4D7C /* PBXContainerItemProxy */;
 		};
-		7A251ECB77D4AF32B7C55452432DF0BA /* PBXTargetDependency */ = {
+		885C6E9F3C7A74CAD184473BD414CD17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftEntryKit;
 			target = FEA6FF0588A91CCD972EDCD698B85647 /* SwiftEntryKit */;
-			targetProxy = 59A59733AF6D32D148DAE34A41C3E01E /* PBXContainerItemProxy */;
+			targetProxy = 4C85DF7A2A96DAFFEF9CD208EB59328C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -801,71 +805,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		585D66CE771E6F2645D2E773BFA29A5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98B817B983B2FD19C1F01DA492596504 /* SwiftEntryKit.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftEntryKit/SwiftEntryKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit.modulemap";
-				PRODUCT_MODULE_NAME = SwiftEntryKit;
-				PRODUCT_NAME = SwiftEntryKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		63DCF7531948F74E95C4F6DEA7408C94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB4C98E22A90AC42729377A725B6FE0D /* SwiftEntryKit.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftEntryKit/SwiftEntryKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit.modulemap";
-				PRODUCT_MODULE_NAME = SwiftEntryKit;
-				PRODUCT_NAME = SwiftEntryKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -973,6 +912,38 @@
 			};
 			name = Debug;
 		};
+		99500EC1D3BCFF7478B91C54D8B50819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9042AC2E64A9876EA3B92208EC18F737 /* SwiftEntryKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftEntryKit/SwiftEntryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit.modulemap";
+				PRODUCT_MODULE_NAME = SwiftEntryKit;
+				PRODUCT_NAME = SwiftEntryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1070,6 +1041,39 @@
 			};
 			name = Release;
 		};
+		C4F150551FD89D6A6836AA79F9CE2ECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC90BCD5591A99D94159D2E05999F93 /* SwiftEntryKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftEntryKit/SwiftEntryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftEntryKit/SwiftEntryKit.modulemap";
+				PRODUCT_MODULE_NAME = SwiftEntryKit;
+				PRODUCT_NAME = SwiftEntryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E2C57691CBF8F918467DA35B63D1C14B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFD8570D08FFA26DC70A6677B52879BE /* Pods-SwiftEntryKitDemo.debug.xcconfig */;
@@ -1107,6 +1111,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3148F3E2E18E96BEFBDF20D035108550 /* Build configuration list for PBXNativeTarget "SwiftEntryKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99500EC1D3BCFF7478B91C54D8B50819 /* Debug */,
+				C4F150551FD89D6A6836AA79F9CE2ECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1130,15 +1143,6 @@
 			buildConfigurations = (
 				809A6E9A3A7385A7F719C8B15330396E /* Debug */,
 				1C4B10D81FE88AE08AA051B424288FB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B06408FFDD0FB0AFD865FF32844FAF5D /* Build configuration list for PBXNativeTarget "SwiftEntryKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				585D66CE771E6F2645D2E773BFA29A5F /* Debug */,
-				63DCF7531948F74E95C4F6DEA7408C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

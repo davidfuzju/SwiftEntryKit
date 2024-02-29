@@ -125,6 +125,7 @@
 		632EF8EF2B71F5AC008769CD /* EKViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8ED2B71F5AC008769CD /* EKViewControllerProvider.swift */; };
 		632EF8F02B71F5AC008769CD /* EKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8EE2B71F5AC008769CD /* EKViewController.swift */; };
 		632EF8F52B71FFB5008769CD /* EKProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EF8F42B71FFB5008769CD /* EKProvider.swift */; };
+		63E504AB2B9033A50068C0E4 /* AssociatedWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E504AA2B9033A50068C0E4 /* AssociatedWeakObject.swift */; };
 		C207011E12B68340B41AED68 /* Pods_SwiftEntryKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7287A554A48DB0976C7AA96F /* Pods_SwiftEntryKitTests.framework */; };
 		ED3C4B61645C539D4E1B2C91 /* Pods_SwiftEntryKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B9C8169640826800BA255C /* Pods_SwiftEntryKitDemo.framework */; };
 /* End PBXBuildFile section */
@@ -292,6 +293,7 @@
 		632EF8ED2B71F5AC008769CD /* EKViewControllerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKViewControllerProvider.swift; sourceTree = "<group>"; };
 		632EF8EE2B71F5AC008769CD /* EKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKViewController.swift; sourceTree = "<group>"; };
 		632EF8F42B71FFB5008769CD /* EKProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKProvider.swift; sourceTree = "<group>"; };
+		63E504AA2B9033A50068C0E4 /* AssociatedWeakObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedWeakObject.swift; sourceTree = "<group>"; };
 		7287A554A48DB0976C7AA96F /* Pods_SwiftEntryKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEntryKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFB554B7EC0872395B9099A /* Pods-SwiftEntryKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftEntryKitDemo/Pods-SwiftEntryKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EFEC60E1244126F18ABBB375 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 				14B48B2220B81C9700CE3EF4 /* UIView+Responder.swift */,
 				14B48B2320B81C9700CE3EF4 /* GradientView.swift */,
 				14B48B2420B81C9700CE3EF4 /* HapticFeedbackGenerator.swift */,
+				63E504AA2B9033A50068C0E4 /* AssociatedWeakObject.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -983,6 +986,7 @@
 				14DF7B6A21BBCD4D0058B2BB /* EKButtonView.swift in Sources */,
 				143C1574271C814E009A7D03 /* UIViewArray+QuickLayout.swift in Sources */,
 				14B48B7520B81C9700CE3EF4 /* EKAttributes+Presets.swift in Sources */,
+				63E504AB2B9033A50068C0E4 /* AssociatedWeakObject.swift in Sources */,
 				14B48B7B20B81C9700CE3EF4 /* EKNotificationMessage.swift in Sources */,
 				14B48B8620B81C9700CE3EF4 /* EKButtonBarView.swift in Sources */,
 				143C1575271C814E009A7D03 /* UIView+QLContentWrap.swift in Sources */,
