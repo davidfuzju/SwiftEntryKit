@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SwiftEntryPresenting: NSObject {
+public protocol SwiftEntryPresenting: NSObject {
     func isCurrentlyDisplaying() -> Bool
     func isCurrentlyDisplaying(entryNamed name: String?) -> Bool
     func display(entry view: UIView, using attributes: EKAttributes)
@@ -20,7 +20,7 @@ extension UIApplication {
     
     static var WindowProviderKey = UnsafeRawPointer(bitPattern: "windowProvider".hashValue)!
     
-    public var entryProvider: EKWindowProvider {
+    var entryProvider: EKWindowProvider {
         return EKWindowProvider.shared
     }
         
@@ -35,7 +35,7 @@ extension UIViewController {
     static var ViewControllerProviderKey = UnsafeRawPointer(bitPattern: "viewControllerProvider".hashValue)!
     static var EntryPresentingKey = UnsafeRawPointer(bitPattern: "EntryPresentingKey".hashValue)!
     
-    public var entryProvider: EKViewControllerProvider? {
+    var entryProvider: EKViewControllerProvider? {
         get {
             return objc_getAssociatedObject(self, UIViewController.ViewControllerProviderKey) as? EKViewControllerProvider
         }
