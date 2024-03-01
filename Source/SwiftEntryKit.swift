@@ -20,7 +20,7 @@ extension UIApplication {
     
     static var WindowProviderKey = UnsafeRawPointer(bitPattern: "windowProvider".hashValue)!
     
-    var entryProvider: EKWindowProvider {
+    public var entryProvider: EKWindowProvider {
         return EKWindowProvider.shared
     }
         
@@ -35,7 +35,7 @@ extension UIViewController {
     static var ViewControllerProviderKey = UnsafeRawPointer(bitPattern: "viewControllerProvider".hashValue)!
     static var EntryPresentingKey = UnsafeRawPointer(bitPattern: "EntryPresentingKey".hashValue)!
     
-    var entryProvider: EKViewControllerProvider? {
+    public var entryProvider: EKViewControllerProvider? {
         get {
             return objc_getAssociatedObject(self, UIViewController.ViewControllerProviderKey) as? EKViewControllerProvider
         }
@@ -44,7 +44,7 @@ extension UIViewController {
         }
     }
     
-    var entryPresenting: SwiftEntryPresenting? {
+    public var entryPresenting: SwiftEntryPresenting? {
         get {
             return objc_getAssociatedWeakObject(self, UIViewController.EntryPresentingKey) as? SwiftEntryPresenting
         }
@@ -63,7 +63,7 @@ extension UIView {
     
     static var EntryPresentingKey = UnsafeRawPointer(bitPattern: "EntryPresentingKey".hashValue)!
     
-    var entryPresenting: SwiftEntryPresenting? {
+    public var entryPresenting: SwiftEntryPresenting? {
         get {
             return objc_getAssociatedWeakObject(self, UIView.EntryPresentingKey) as? SwiftEntryPresenting
         }
