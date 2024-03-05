@@ -10,8 +10,8 @@ import UIKit
 public protocol SwiftEntryPresenting: NSObject {
     func isCurrentlyDisplaying() -> Bool
     func isCurrentlyDisplaying(entryNamed name: String?) -> Bool
-    func display(entry view: UIView, using attributes: EKAttributes)
-    func display(entry viewController: UIViewController, using attributes: EKAttributes)
+    func display(sender: UIViewController?, entry view: UIView, using attributes: EKAttributes)
+    func display(sender: UIViewController?, entry viewController: UIViewController, using attributes: EKAttributes)
     func dismiss(_ descriptor: SwiftEntryKit.EntryDismissalDescriptor, with completion: SwiftEntryKit.DismissCompletionHandler?)
     func queueContains(entryNamed name: String?) -> Bool
 }
@@ -34,6 +34,7 @@ extension UIViewController {
     
     static var ViewControllerProviderKey = UnsafeRawPointer(bitPattern: "viewControllerProvider".hashValue)!
     static var EntryPresentingKey = UnsafeRawPointer(bitPattern: "EntryPresentingKey".hashValue)!
+    static var EntrySenderKey = UnsafeRawPointer(bitPattern: "EntrySenderKey".hashValue)!
     
     var entryProvider: EKViewControllerProvider? {
         get {
@@ -53,6 +54,15 @@ extension UIViewController {
         }
     }
     
+    public var entrySender: UIViewController? {
+        get {
+            return objc_getAssociatedWeakObject(self, UIViewController.EntrySenderKey) as? UIViewController
+        }
+        set {
+            objc_setAssociatedWeakObject(self, UIViewController.EntrySenderKey, newValue)
+        }
+    }
+    
     public var entryViewController: UIViewController? {
         return entryProvider?.entryViewController
     }
@@ -62,6 +72,7 @@ extension UIViewController {
 extension UIView {
     
     static var EntryPresentingKey = UnsafeRawPointer(bitPattern: "EntryPresentingKey".hashValue)!
+    static var EntrySenderKey = UnsafeRawPointer(bitPattern: "EntrySenderKey".hashValue)!
     
     public var entryPresenting: SwiftEntryPresenting? {
         get {
@@ -72,6 +83,15 @@ extension UIView {
         }
     }
     
+    public var entrySender: UIViewController? {
+        get {
+            return objc_getAssociatedWeakObject(self, UIViewController.EntrySenderKey) as? UIViewController
+        }
+        set {
+            objc_setAssociatedWeakObject(self, UIViewController.EntrySenderKey, newValue)
+        }
+    }
+
 }
 
 extension UIApplication: SwiftEntryPresenting {
@@ -84,12 +104,12 @@ extension UIApplication: SwiftEntryPresenting {
         return SwiftEntryKit.isCurrentlyDisplaying(entryNamed: name)
     }
     
-    public func display(entry view: UIView, using attributes: EKAttributes) {
-        SwiftEntryKit.display(entry: view, using: attributes)
+    public func display(sender: UIViewController? = nil, entry view: UIView, using attributes: EKAttributes) {
+        SwiftEntryKit.display(sender: sender, entry: view, using: attributes)
     }
     
-    public func display(entry viewController: UIViewController, using attributes: EKAttributes) {
-        SwiftEntryKit.display(entry: viewController, using: attributes)
+    public func display(sender: UIViewController? = nil, entry viewController: UIViewController, using attributes: EKAttributes) {
+        SwiftEntryKit.display(sender: sender, entry: viewController, using: attributes)
     }
     
     public func dismiss(_ descriptor: SwiftEntryKit.EntryDismissalDescriptor = .displayed, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
@@ -112,12 +132,12 @@ extension UIViewController: SwiftEntryPresenting {
         return SwiftEntryKit.isCurrentlyDisplaying(self, entryNamed: name)
     }
     
-    public func display(entry view: UIView, using attributes: EKAttributes) {
-        SwiftEntryKit.display(self, entry: view, using: attributes)
+    public func display(sender: UIViewController? = nil, entry view: UIView, using attributes: EKAttributes) {
+        SwiftEntryKit.display(self, sender: sender, entry: view, using: attributes)
     }
     
-    public func display(entry viewController: UIViewController, using attributes: EKAttributes) {
-        SwiftEntryKit.display(self, entry: viewController, using: attributes)
+    public func display(sender: UIViewController? = nil, entry viewController: UIViewController, using attributes: EKAttributes) {
+        SwiftEntryKit.display(self, sender: sender, entry: viewController, using: attributes)
     }
     
     public func dismiss(_ descriptor: SwiftEntryKit.EntryDismissalDescriptor = .displayed, with completion: SwiftEntryKit.DismissCompletionHandler? = nil) {
@@ -216,12 +236,13 @@ extension SwiftEntryKit {
      - parameter view: Custom view that is to be displayed
      - parameter attributes: Display properties
      */
-    public class func display(_ presenting: UIViewController, entry view: UIView, using attributes: EKAttributes) {
+    public class func display(_ presenting: UIViewController, sender: UIViewController? = nil, entry view: UIView, using attributes: EKAttributes) {
         DispatchQueue.main.async {
             if presenting.entryProvider == nil {
                 presenting.entryProvider = EKViewControllerProvider(with: presenting)
             }
             view.entryPresenting = presenting
+            view.entrySender = sender
             presenting.entryProvider?.display(view: view, using: attributes)
         }
     }
@@ -234,12 +255,13 @@ extension SwiftEntryKit {
      - parameter view: Custom view that is to be displayed
      - parameter attributes: Display properties
      */
-    public class func display(_ presenting: UIViewController, entry viewController: UIViewController, using attributes: EKAttributes) {
+    public class func display(_ presenting: UIViewController, sender: UIViewController? = nil, entry viewController: UIViewController, using attributes: EKAttributes) {
         DispatchQueue.main.async {
             if presenting.entryProvider == nil {
                 presenting.entryProvider = EKViewControllerProvider(with: presenting)
             }
             viewController.entryPresenting = presenting
+            viewController.entrySender = sender
             presenting.entryProvider?.display(viewController: viewController, using: attributes)
         }
     }
@@ -337,9 +359,10 @@ extension SwiftEntryKit {
      - parameter presentInsideKeyWindow: Indicates whether the entry window should become the key window.
      - parameter rollbackWindow: After the entry has been dismissed, SwiftEntryKit rolls back to the given window. By default it is *.main* which is the app main window
      */
-    public class func display(entry view: UIView, using attributes: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: RollbackWindow = .main) {
+    public class func display(sender: UIViewController? = nil, entry view: UIView, using attributes: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: RollbackWindow = .main) {
         DispatchQueue.main.async {
             view.entryPresenting = UIApplication.shared
+            view.entrySender = sender
             EKWindowProvider.shared.display(view: view, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
         }
     }
@@ -353,9 +376,10 @@ extension SwiftEntryKit {
      - parameter presentInsideKeyWindow: Indicates whether the entry window should become the key window.
      - parameter rollbackWindow: After the entry has been dismissed, SwiftEntryKit rolls back to the given window. By default it is *.main* - which is the app main window
      */
-    public class func display(entry viewController: UIViewController, using attributes: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: RollbackWindow = .main) {
+    public class func display(sender: UIViewController? = nil, entry viewController: UIViewController, using attributes: EKAttributes, presentInsideKeyWindow: Bool = false, rollbackWindow: RollbackWindow = .main) {
         DispatchQueue.main.async {
             viewController.entryPresenting = UIApplication.shared
+            viewController.entrySender = sender
             EKWindowProvider.shared.display(viewController: viewController, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
         }
     }
