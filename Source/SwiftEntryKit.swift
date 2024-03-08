@@ -220,7 +220,7 @@ extension SwiftEntryKit {
     /**
      Returns true if an entry with a given name is currently enqueued and waiting to be displayed.
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
-     - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently displayed, meaning, the queue is not currently empty.
+     - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently enqueued and waiting to be displayed, meaning, the queue is not currently empty.
      - parameter presenting: A presenting view controller for entry to be display
      - parameter name: The name of the entry. Its default value is *nil*.
      */
@@ -343,7 +343,7 @@ extension SwiftEntryKit {
     /**
      Returns true if an entry with a given name is currently enqueued and waiting to be displayed.
      - Not thread safe - should be called from the main queue only in order to receive a reliable result.
-     - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently displayed, meaning, the queue is not currently empty.
+     - If invoked with *name* = *nil* or without the parameter value, it will return *true* if **any** entry is currently enqueued and waiting to be displayed, meaning, the queue is not currently empty.
      - parameter name: The name of the entry. Its default value is *nil*.
      */
     public class func queueContains(entryNamed name: String? = nil) -> Bool {
