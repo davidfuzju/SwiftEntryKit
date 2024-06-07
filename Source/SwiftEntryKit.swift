@@ -20,12 +20,12 @@ extension UIApplication {
     
     static var WindowProviderKey = UnsafeRawPointer(bitPattern: "windowProvider".hashValue)!
     
-    var entryProvider: EKWindowProvider {
-        return EKWindowProvider.shared
+    func entryProvider(for level: UIWindow.Level) -> EKWindowProvider {
+        return EKWindowProvider.provider(for: level)
     }
-        
-    public var entryWindow: UIWindow? {
-        return entryProvider.entryWindow
+
+    func entryWindow(for level: UIWindow.Level) -> UIWindow? {
+        return EKWindowProvider.provider(for: level).entryWindow
     }
 
 }
@@ -328,7 +328,7 @@ extension SwiftEntryKit {
      - parameter name: The name of the entry. Its default value is *nil*.
      */
     public class func isCurrentlyDisplaying(entryNamed name: String? = nil) -> Bool {
-        return EKWindowProvider.shared.isCurrentlyDisplaying(entryNamed: name)
+        return EKWindowProvider.isCurrentlyDisplaying(entryNamed: name)
     }
     
     /**
@@ -347,7 +347,7 @@ extension SwiftEntryKit {
      - parameter name: The name of the entry. Its default value is *nil*.
      */
     public class func queueContains(entryNamed name: String? = nil) -> Bool {
-        return EKWindowProvider.shared.queueContains(entryNamed: name)
+        return EKWindowProvider.queueContains(entryNamed: name)
     }
     
     /**
@@ -363,7 +363,7 @@ extension SwiftEntryKit {
         DispatchQueue.main.async {
             view.entryPresenting = UIApplication.shared
             view.entrySender = sender
-            EKWindowProvider.shared.display(view: view, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
+            EKWindowProvider.provider(for: attributes.windowLevel.value).display(view: view, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
         }
     }
     
@@ -380,7 +380,7 @@ extension SwiftEntryKit {
         DispatchQueue.main.async {
             viewController.entryPresenting = UIApplication.shared
             viewController.entrySender = sender
-            EKWindowProvider.shared.display(viewController: viewController, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
+            EKWindowProvider.provider(for: attributes.windowLevel.value).display(viewController: viewController, using: attributes, presentInsideKeyWindow: presentInsideKeyWindow, rollbackWindow: rollbackWindow)
         }
     }
     
@@ -393,7 +393,7 @@ extension SwiftEntryKit {
      */
     public class func transform(to view: UIView) {
         DispatchQueue.main.async {
-            EKWindowProvider.shared.transform(to: view)
+            EKWindowProvider.topMostProvider?.transform(to: view)
         }
     }
     
@@ -406,7 +406,7 @@ extension SwiftEntryKit {
      */
     public class func dismiss(_ descriptor: EntryDismissalDescriptor = .displayed, with completion: DismissCompletionHandler? = nil) {
         DispatchQueue.main.async {
-            EKWindowProvider.shared.dismiss(descriptor, with: completion)
+            EKWindowProvider.dismiss(descriptor, with: completion)
         }
     }
     
@@ -418,10 +418,10 @@ extension SwiftEntryKit {
      */
     public class func layoutIfNeeded() {
         if Thread.isMainThread {
-            EKWindowProvider.shared.layoutIfNeeded()
+            EKWindowProvider.layoutIfNeeded()
         } else {
             DispatchQueue.main.async {
-                EKWindowProvider.shared.layoutIfNeeded()
+                EKWindowProvider.layoutIfNeeded()
             }
         }
     }
